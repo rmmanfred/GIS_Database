@@ -1,0 +1,151 @@
+;
+; Existence searches that should find single matches:
+Cmd  1:  exists	Bootlegger Gap	NM
+
+1 occurrences: Bootlegger Gap NM
+---------------------------------------------------
+Cmd  2:  exists	Niagara Tunnel (historical)	NM
+
+1 occurrences: Niagara Tunnel (historical) NM
+---------------------------------------------------
+Cmd  3:  exists	Cleveland Mine	NM
+
+1 occurrences: Cleveland Mine NM
+---------------------------------------------------
+;
+; Some that should find multiple matches:
+Cmd  4:  exists	Arroyo Cuervo	NM
+
+2 occurrences: Arroyo Cuervo NM
+---------------------------------------------------
+Cmd  5:  exists	Box Canyon	NM
+
+4 occurrences: Box Canyon NM
+---------------------------------------------------
+Cmd  6:  exists	Canon del Agua	NM
+
+6 occurrences: Canon del Agua NM
+---------------------------------------------------
+;
+; Some details searches:
+Cmd  7:  details_of	Canon del Agua	NM
+
+FID:       902800
+Name:      Canon del Agua
+Type:      Civil
+State:     NM
+County:    Santa Fe
+Longitude: 106d 13m 10s West   (-106.2194683)
+Latitude:   35d 15m 10s North   (35.2528197)
+
+FID:       904562
+Name:      Canon del Agua
+Type:      Valley
+State:     NM
+County:    Mora
+Longitude: 105d 15m 25s West   (-105.2569559)
+Latitude:   35d 56m 50s North   (35.9472601)
+
+FID:       904563
+Name:      Canon del Agua
+Type:      Valley
+State:     NM
+County:    San Miguel
+Longitude: 105d 16m 40s West   (-105.2777879)
+Latitude:   35d 40m 12s North   (35.6700424)
+
+FID:       904564
+Name:      Canon del Agua
+Type:      Valley
+State:     NM
+County:    Torrance
+Longitude: 106d 19m 46s West   (-106.3294641)
+Latitude:   34d 41m 12s North   (34.6867257)
+
+FID:       904565
+Name:      Canon del Agua
+Type:      Valley
+State:     NM
+County:    Sandoval
+Longitude: 106d 18m 23s West   (-106.306413)
+Latitude:   35d 16m 56s North   (35.2822632)
+
+FID:       904566
+Name:      Canon del Agua
+Type:      Valley
+State:     NM
+County:    Sandoval
+Longitude: 106d 32m 19s West   (-106.5386367)
+Latitude:   35d 18m 10s North   (35.3028177)
+
+---------------------------------------------------
+Cmd  8:  details_of	Navajo	NM
+
+FID:       899810
+Name:      Navajo
+Type:      Populated Place
+State:     NM
+County:    Rio Arriba
+Longitude: 107d  3m 47s West   (-107.0630945)
+Latitude:   36d 56m 46s North   (36.9461201)
+
+---------------------------------------------------
+Cmd  9:  details_of	Smuggler Hills	NM
+
+FID:       901128
+Name:      Smuggler Hills
+Type:      Range
+State:     NM
+County:    Hidalgo
+Longitude: 108d 38m 33s West   (-108.6425438)
+Latitude:   31d 27m 25s North   (31.4570498)
+
+---------------------------------------------------
+Cmd  10:  details_of	Capitan Pass	NM
+
+FID:       904748
+Name:      Capitan Pass
+Type:      Gap
+State:     NM
+County:    Lincoln
+Longitude: 105d 28m  9s West   (-105.4691488)
+Latitude:   33d 37m 26s North   (33.6239698)
+
+---------------------------------------------------
+Cmd  11:  details_of	Bug Scuffle Hill	NM
+
+FID:       904166
+Name:      Bug Scuffle Hill
+Type:      Summit
+State:     NM
+County:    Otero
+Longitude: 105d 48m 24s West   (-105.8066452)
+Latitude:   32d 38m 50s North   (32.6473173)
+
+---------------------------------------------------
+;
+; Some distance searches:
+Cmd  12:  distance_between	899789	899891
+
+First:	( 108d 51m 11s West,  34d 23m 33s North )  Mesita Blanca, NM
+Second:	( 106d 52m 28s West,  33d 53m 34s North )  San Antonito, NM
+Distance:  190.4km
+---------------------------------------------------
+Cmd  13:  distance_between	899970	900565
+
+First:	( 107d 29m 33s West,  34d 59m 28s North )  Tze-Midi, NM
+Second:	( 104d 59m 34s West,  36d 24m  2s North )  Toothache Spring, NM
+Distance:  274.8km
+---------------------------------------------------
+Cmd  14:  distance_between	901034	902240
+
+First:	( 105d 16m 20s West,  36d 23m  3s North )  Angel Fire Ski Area, NM
+Second:	( 104d 29m 38s West,  36d 39m 54s North )  Eagle Rock, NM
+Distance:  76.2km
+---------------------------------------------------
+Cmd  15:  distance_between	903054	902746
+
+First:	( 105d 57m 37s West,  32d 53m 58s North )  Alamogordo, NM
+Second:	( 106d 28m 31s West,  33d 40m 38s North )  Trinity Site, NM
+Distance:  98.8km
+---------------------------------------------------

@@ -1,0 +1,24 @@
+; Script 7:  22,500-element db file, duplicate feature names
+;            exists commands
+;            details commands
+;            distance_between commands
+;
+; Execution:  gis script07.txt log07.txt
+;
+db_file	NM_22500.txt
+table_sz	35000
+;
+; Existence searches:
+exists	Jemez Falls	NM
+exists	Bosque del Apache National Wildlife Refuge	NM
+;
+; Some details searches:
+details_of	Jemez Falls	NM
+details_of	Bosque del Apache National Wildlife Refuge	NM
+details_of	Aztec Ruins National Monument	NM
+details_of	Screaming Left Hand Turn	NM
+;
+; Some distance searches:
+distance_between	906350	920422
+distance_between	2095890	885961
+distance_between	925103	906605

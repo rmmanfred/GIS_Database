@@ -1,0 +1,2199 @@
+Grading:  rmm26079.c08.1.tar
+Time:     Fri Dec 6 20:39:46 EST 2019
+
+================================================================================
+
+>>Scores from testing<<
+1 >> Score from stulog01.txt:  135 / 135
+2 >> Score from stulog02.txt:  150 / 150
+3 >> Score from stulog03.txt:  660 / 660
+4 >> Score from stulog04.txt:  530 / 530
+5 >> Score from stulog05.txt:  410 / 410
+6 >> Score from stulog06.txt:  395 / 395
+7 >> Score from stulog07.txt:  25 / 25
+8 >> Score from stulog08.txt:  250 / 250
+9 >> Score from stulog09.txt:  445 / 445
+
+================================================================================
+
+Summary of valgrind results:
+
+Valgrind issues:
+==13050==     in use at exit: 0 bytes in 0 blocks
+==13050==   total heap usage: 334,575 allocs, 334,575 frees, 20,370,433 bytes allocated
+Invalid reads: 0
+Invalid writes: 0
+Uses of uninitialized values: 0
+================================================================================
+Results from testing:
+
+Begin testing...
+Testing with script01.txt
+Running student soln on ./scripts/script01.txt
+
+Running compare on reflog01.txt and stulog01.txt
+compare01.txt results:
+Comparing reference file ./logs/reflog01.txt to student file stulog01.txt:
+
+;
+   zero-point line
+; Existence searches that should find single matches:
+   zero-point line
+Cmd  1:  exists	Windmill	NM
+   zero-point line
+
+   zero-point line
+1 occurrences: Windmill NM
+   score: 10 / 10
+---------------------------------------------------
+   zero-point line
+Cmd  2:  exists	Last Canyon	NM
+   zero-point line
+
+   zero-point line
+1 occurrences: Last Canyon NM
+   score: 10 / 10
+---------------------------------------------------
+   zero-point line
+Cmd  3:  exists	Yucca Tank	NM
+   zero-point line
+
+   zero-point line
+1 occurrences: Yucca Tank NM
+   score: 10 / 10
+---------------------------------------------------
+   zero-point line
+;
+   zero-point line
+; Details searches that should find single matches:
+   zero-point line
+Cmd  4:  details_of	Windmill	NM
+   zero-point line
+
+   zero-point line
+FID:       924890
+   score: 5 / 5
+Name:      Windmill
+   score: 5 / 5
+Type:      Populated Place
+   score: 5 / 5
+State:     NM
+   score: 5 / 5
+County:    Hidalgo
+   score: 5 / 5
+Longitude: 108d 37m 30s West   (-108.6250518)
+   (-108.6250518) should be (-108.625052)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+Latitude:   31d 58m 40s North   (31.9778689)
+   (31.9778689) should be (31.977869)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+
+   zero-point line
+---------------------------------------------------
+   zero-point line
+Cmd  5:  details_of	Last Canyon	NM
+   zero-point line
+
+   zero-point line
+FID:       924857
+   score: 5 / 5
+Name:      Last Canyon
+   score: 5 / 5
+Type:      Valley
+   score: 5 / 5
+State:     NM
+   score: 5 / 5
+County:    San Juan
+   score: 5 / 5
+Longitude: 108d 56m 30s West   (-108.9417624)
+   (-108.9417624) should be (-108.941762)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+Latitude:   36d 47m 24s North   (36.7899989)
+   (36.7899989) should be (36.789999)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+
+   zero-point line
+---------------------------------------------------
+   zero-point line
+Cmd  6:  details_of	Bisti Badlands	NM
+   zero-point line
+
+   zero-point line
+FID:       924849
+   score: 5 / 5
+Name:      Bisti Badlands
+   score: 5 / 5
+Type:      Area
+   score: 5 / 5
+State:     NM
+   score: 5 / 5
+County:    San Juan
+   score: 5 / 5
+Longitude: 108d 11m 42s West   (-108.1950721)
+   (-108.1950721) should be (-108.195072)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+Latitude:   36d 17m  5s North   (36.2847312)
+   (36.2847312) should be (36.284731)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+
+   zero-point line
+---------------------------------------------------
+   zero-point line
+
+1 >> Score from stulog01.txt:  135 / 135
+================================================================================
+
+Testing with script02.txt
+Running student soln on ./scripts/script02.txt
+
+Running compare on reflog02.txt and stulog02.txt
+compare02.txt results:
+Comparing reference file ./logs/reflog02.txt to student file stulog02.txt:
+
+;
+   zero-point line
+; Existence searches that should find single matches:
+   zero-point line
+Cmd  1:  exists	Gorman	NM
+   zero-point line
+
+   zero-point line
+1 occurrences: Gorman NM
+   score: 10 / 10
+---------------------------------------------------
+   zero-point line
+Cmd  2:  exists	Heck	NM
+   zero-point line
+
+   zero-point line
+1 occurrences: Heck NM
+   score: 10 / 10
+---------------------------------------------------
+   zero-point line
+Cmd  3:  exists	Big Arsenic Falls	NM
+   zero-point line
+
+   zero-point line
+1 occurrences: Big Arsenic Falls NM
+   score: 10 / 10
+---------------------------------------------------
+   zero-point line
+;
+   zero-point line
+; Distance_between searches:
+   zero-point line
+Cmd  4:  distance_between	924838	924839
+   zero-point line
+
+   zero-point line
+First:	( 105d 17m 27s West,  36d 31m 50s North )  Gorman, NM
+   score: 10 / 10
+Second:	( 105d 18m 32s West,  36d 40m  2s North )  Heck, NM
+   score: 10 / 10
+Distance:  15.3km
+   score: 10 / 10
+---------------------------------------------------
+   zero-point line
+Cmd  5:  distance_between	924838	924842
+   zero-point line
+
+   zero-point line
+First:	( 105d 17m 27s West,  36d 31m 50s North )  Gorman, NM
+   score: 10 / 10
+Second:	( 105d 42m 19s West,  36d 40m 31s North )  Big Arsenic Falls, NM
+   score: 10 / 10
+Distance:  40.3km
+   score: 10 / 10
+---------------------------------------------------
+   zero-point line
+Cmd  6:  distance_between	924890	924839
+   zero-point line
+
+   zero-point line
+First:	( 108d 37m 30s West,  31d 58m 40s North )  Windmill, NM
+   score: 10 / 10
+Second:	( 105d 18m 32s West,  36d 40m  2s North )  Heck, NM
+   score: 10 / 10
+Distance:  603.7km
+   score: 10 / 10
+---------------------------------------------------
+   zero-point line
+Cmd  7:  distance_between	924879	924864
+   zero-point line
+
+   zero-point line
+First:	( 106d 49m 57s West,  32d 42m  7s North )  Estell Tank, NM
+   score: 10 / 10
+Second:	( 107d 45m 28s West,  32d 33m 20s North )  Montezuma Canyon, NM
+   score: 10 / 10
+Distance:  88.2km
+   score: 10 / 10
+---------------------------------------------------
+   zero-point line
+
+2 >> Score from stulog02.txt:  150 / 150
+================================================================================
+
+Testing with script03.txt
+Running student soln on ./scripts/script03.txt
+
+Running compare on reflog03.txt and stulog03.txt
+compare03.txt results:
+Comparing reference file ./logs/reflog03.txt to student file stulog03.txt:
+
+;
+   zero-point line
+; Existence searches that should find single matches:
+   zero-point line
+Cmd  1:  exists	Arroyo Seco Spring	NM
+   zero-point line
+
+   zero-point line
+1 occurrences: Arroyo Seco Spring NM
+   score: 10 / 10
+---------------------------------------------------
+   zero-point line
+Cmd  2:  exists	Agua Piedra Trail	NM
+   zero-point line
+
+   zero-point line
+1 occurrences: Agua Piedra Trail NM
+   score: 10 / 10
+---------------------------------------------------
+   zero-point line
+Cmd  3:  exists	Aqua Dulce Seep	NM
+   zero-point line
+
+   zero-point line
+1 occurrences: Aqua Dulce Seep NM
+   score: 10 / 10
+---------------------------------------------------
+   zero-point line
+;
+   zero-point line
+; Some that should find multiple matches:
+   zero-point line
+Cmd  4:  exists	Earth Tank	NM
+   zero-point line
+
+   zero-point line
+2 occurrences: Earth Tank NM
+   score: 10 / 10
+---------------------------------------------------
+   zero-point line
+Cmd  5:  exists	Turkey Tank	NM
+   zero-point line
+
+   zero-point line
+3 occurrences: Turkey Tank NM
+   score: 10 / 10
+---------------------------------------------------
+   zero-point line
+;
+   zero-point line
+; Details searches that should find single matches:
+   zero-point line
+Cmd  6:  details_of	Arroyo Seco Spring	NM
+   zero-point line
+
+   zero-point line
+FID:       913978
+   score: 5 / 5
+Name:      Arroyo Seco Spring
+   score: 5 / 5
+Type:      Spring
+   score: 5 / 5
+State:     NM
+   score: 5 / 5
+County:    Rio Arriba
+   score: 5 / 5
+Longitude: 106d 11m 33s West   (-106.1925646)
+   (-106.1925646) should be (-106.192565)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+Latitude:   36d 24m 30s North   (36.4083448)
+   (36.4083448) should be (36.408345)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+
+   zero-point line
+---------------------------------------------------
+   zero-point line
+Cmd  7:  details_of	Agua Piedra Trail	NM
+   zero-point line
+
+   zero-point line
+FID:       913424
+   score: 5 / 5
+Name:      Agua Piedra Trail
+   score: 5 / 5
+Type:      Trail
+   score: 5 / 5
+State:     NM
+   score: 5 / 5
+County:    Los Alamos
+   score: 5 / 5
+Longitude: 106d 19m 10s West   (-106.3194727)
+   (-106.3194727) should be (-106.319473)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+Latitude:   35d 56m 37s North   (35.9436339)
+   (35.9436339) should be (35.943634)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+
+   zero-point line
+---------------------------------------------------
+   zero-point line
+Cmd  8:  details_of	Aqua Dulce Seep	NM
+   zero-point line
+
+   zero-point line
+FID:       913275
+   score: 5 / 5
+Name:      Aqua Dulce Seep
+   score: 5 / 5
+Type:      Spring
+   score: 5 / 5
+State:     NM
+   score: 5 / 5
+County:    Eddy
+   score: 5 / 5
+Longitude: 104d 41m 25s West   (-104.6902267)
+   (-104.6902267) should be (-104.690227)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+Latitude:   32d  7m  9s North   (32.1192233)
+   (32.1192233) should be (32.119223)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+
+   zero-point line
+---------------------------------------------------
+   zero-point line
+;
+   zero-point line
+; Some that should find multiple matches:
+   zero-point line
+Cmd  9:  details_of	Earth Tank	NM
+   zero-point line
+
+   zero-point line
+FID:       914030
+   score: 5 / 5
+Name:      Earth Tank
+   score: 5 / 5
+Type:      Reservoir
+   score: 5 / 5
+State:     NM
+   score: 5 / 5
+County:    Socorro
+   score: 5 / 5
+Longitude: 107d 13m 57s West   (-107.232505)
+   score: 5 / 5
+Latitude:   34d  3m 20s North   (34.055614)
+   score: 5 / 5
+
+   zero-point line
+FID:       914045
+   score: 5 / 5
+Name:      Earth Tank
+   score: 5 / 5
+Type:      Reservoir
+   score: 5 / 5
+State:     NM
+   score: 5 / 5
+County:    Socorro
+   score: 5 / 5
+Longitude: 107d  9m 11s West   (-107.1530641)
+   (-107.1530641) should be (-107.153064)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+Latitude:   34d  6m 36s North   (34.1099917)
+   (34.1099917) should be (34.109992)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+
+   zero-point line
+---------------------------------------------------
+   zero-point line
+Cmd  10:  details_of	Turkey Tank	NM
+   zero-point line
+
+   zero-point line
+FID:       913137
+   score: 5 / 5
+Name:      Turkey Tank
+   score: 5 / 5
+Type:      Reservoir
+   score: 5 / 5
+State:     NM
+   score: 5 / 5
+County:    Lincoln
+   score: 5 / 5
+Longitude: 105d 35m 40s West   (-105.5944262)
+   (-105.5944262) should be (-105.594426)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+Latitude:   33d 23m  5s North   (33.3848579)
+   (33.3848579) should be (33.384858)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+
+   zero-point line
+FID:       913160
+   score: 5 / 5
+Name:      Turkey Tank
+   score: 5 / 5
+Type:      Reservoir
+   score: 5 / 5
+State:     NM
+   score: 5 / 5
+County:    Catron
+   score: 5 / 5
+Longitude: 108d 44m 16s West   (-108.7376631)
+   (-108.7376631) should be (-108.737663)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+Latitude:   33d 32m 26s North   (33.5404365)
+   (33.5404365) should be (33.540436)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+
+   zero-point line
+FID:       913860
+   score: 5 / 5
+Name:      Turkey Tank
+   score: 5 / 5
+Type:      Reservoir
+   score: 5 / 5
+State:     NM
+   score: 5 / 5
+County:    Rio Arriba
+   score: 5 / 5
+Longitude: 106d 51m  4s West   (-106.8512421)
+   (-106.8512421) should be (-106.851242)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+Latitude:   36d 26m  0s North   (36.4333816)
+   (36.4333816) should be (36.433382)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+
+   zero-point line
+---------------------------------------------------
+   zero-point line
+Cmd  11:  details_of	Little Tank	NM
+   zero-point line
+
+   zero-point line
+FID:       913135
+   score: 5 / 5
+Name:      Little Tank
+   score: 5 / 5
+Type:      Reservoir
+   score: 5 / 5
+State:     NM
+   score: 5 / 5
+County:    Otero
+   score: 5 / 5
+Longitude: 105d 26m 19s West   (-105.4386485)
+   (-105.4386485) should be (-105.438648)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+Latitude:   32d 45m 57s North   (32.7658059)
+   (32.7658059) should be (32.765806)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+
+   zero-point line
+FID:       913350
+   score: 5 / 5
+Name:      Little Tank
+   score: 5 / 5
+Type:      Reservoir
+   score: 5 / 5
+State:     NM
+   score: 5 / 5
+County:    Lincoln
+   score: 5 / 5
+Longitude: 105d 25m 40s West   (-105.4277189)
+   (-105.4277189) should be (-105.427719)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+Latitude:   33d 26m 34s North   (33.4427006)
+   (33.4427006) should be (33.442701)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+
+   zero-point line
+FID:       913357
+   score: 5 / 5
+Name:      Little Tank
+   score: 5 / 5
+Type:      Reservoir
+   score: 5 / 5
+State:     NM
+   score: 5 / 5
+County:    Otero
+   score: 5 / 5
+Longitude: 105d 28m 49s West   (-105.4804099)
+   (-105.4804099) should be (-105.480410)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+Latitude:   32d 49m 42s North   (32.8284503)
+   (32.8284503) should be (32.828450)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+
+   zero-point line
+FID:       913391
+   score: 5 / 5
+Name:      Little Tank
+   score: 5 / 5
+Type:      Reservoir
+   score: 5 / 5
+State:     NM
+   score: 5 / 5
+County:    Otero
+   score: 5 / 5
+Longitude: 105d 23m 30s West   (-105.3916456)
+   (-105.3916456) should be (-105.391646)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+Latitude:   32d 44m 32s North   (32.7423244)
+   (32.7423244) should be (32.742324)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+
+   zero-point line
+FID:       913890
+   score: 5 / 5
+Name:      Little Tank
+   score: 5 / 5
+Type:      Reservoir
+   score: 5 / 5
+State:     NM
+   score: 5 / 5
+County:    Socorro
+   score: 5 / 5
+Longitude: 107d  9m 42s West   (-107.1617018)
+   (-107.1617018) should be (-107.161702)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+Latitude:   34d  6m 11s North   (34.1031202)
+   (34.1031202) should be (34.103120)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+
+   zero-point line
+FID:       913938
+   score: 5 / 5
+Name:      Little Tank
+   score: 5 / 5
+Type:      Reservoir
+   score: 5 / 5
+State:     NM
+   score: 5 / 5
+County:    Rio Arriba
+   score: 5 / 5
+Longitude: 106d 34m 31s West   (-106.5754161)
+   (-106.5754161) should be (-106.575416)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+Latitude:   36d 25m 53s North   (36.431335)
+   score: 5 / 5
+
+   zero-point line
+---------------------------------------------------
+   zero-point line
+;
+   zero-point line
+; Distance_between searches:
+   zero-point line
+Cmd  12:  distance_between	913137	913860
+   zero-point line
+
+   zero-point line
+First:	( 105d 35m 40s West,  33d 23m  5s North )  Turkey Tank, NM
+   score: 10 / 10
+Second:	( 106d 51m  4s West,  36d 26m  0s North )  Turkey Tank, NM
+   score: 10 / 10
+Distance:  357.8km
+   score: 10 / 10
+---------------------------------------------------
+   zero-point line
+Cmd  13:  distance_between	913132	913215
+   zero-point line
+
+   zero-point line
+First:	( 105d 11m 48s West,  33d 36m 24s North )  Ramerez, NM
+   score: 10 / 10
+Second:	( 105d 50m 34s West,  32d 39m 36s North )  Table Top, NM
+   score: 10 / 10
+Distance:  121.2km
+   score: 10 / 10
+---------------------------------------------------
+   zero-point line
+Cmd  14:  distance_between	913437	913451
+   zero-point line
+
+   zero-point line
+First:	( 105d 48m 33s West,  35d 46m  9s North )  Big Tesuque Campground, NM
+   score: 10 / 10
+Second:	( 107d 18m 35s West,  36d 32m  9s North )  Jaramillo Mesa, NM
+   score: 10 / 10
+Distance:  159.4km
+   score: 10 / 10
+---------------------------------------------------
+   zero-point line
+Cmd  15:  distance_between	913459	913579
+   zero-point line
+
+   zero-point line
+First:	( 103d 11m 28s West,  36d 26m 48s North )  NASA Wind Charger, NM
+   score: 10 / 10
+Second:	( 105d 25m 33s West,  36d 22m 13s North )  Taos, NM
+   score: 10 / 10
+Distance:  200.2km
+   score: 10 / 10
+---------------------------------------------------
+   zero-point line
+
+3 >> Score from stulog03.txt:  660 / 660
+================================================================================
+
+Testing with script04.txt
+Running student soln on ./scripts/script04.txt
+
+Running compare on reflog04.txt and stulog04.txt
+compare04.txt results:
+Comparing reference file ./logs/reflog04.txt to student file stulog04.txt:
+
+;
+   zero-point line
+; Existence searches that should find single matches:
+   zero-point line
+Cmd  1:  exists	Bootlegger Gap	NM
+   zero-point line
+
+   zero-point line
+1 occurrences: Bootlegger Gap NM
+   score: 10 / 10
+---------------------------------------------------
+   zero-point line
+Cmd  2:  exists	Niagara Tunnel (historical)	NM
+   zero-point line
+
+   zero-point line
+1 occurrences: Niagara Tunnel (historical) NM
+   score: 10 / 10
+---------------------------------------------------
+   zero-point line
+Cmd  3:  exists	Cleveland Mine	NM
+   zero-point line
+
+   zero-point line
+1 occurrences: Cleveland Mine NM
+   score: 10 / 10
+---------------------------------------------------
+   zero-point line
+;
+   zero-point line
+; Some that should find multiple matches:
+   zero-point line
+Cmd  4:  exists	Arroyo Cuervo	NM
+   zero-point line
+
+   zero-point line
+2 occurrences: Arroyo Cuervo NM
+   score: 10 / 10
+---------------------------------------------------
+   zero-point line
+Cmd  5:  exists	Box Canyon	NM
+   zero-point line
+
+   zero-point line
+4 occurrences: Box Canyon NM
+   score: 10 / 10
+---------------------------------------------------
+   zero-point line
+Cmd  6:  exists	Canon del Agua	NM
+   zero-point line
+
+   zero-point line
+6 occurrences: Canon del Agua NM
+   score: 10 / 10
+---------------------------------------------------
+   zero-point line
+;
+   zero-point line
+; Some details searches:
+   zero-point line
+Cmd  7:  details_of	Canon del Agua	NM
+   zero-point line
+
+   zero-point line
+FID:       902800
+   score: 5 / 5
+Name:      Canon del Agua
+   score: 5 / 5
+Type:      Civil
+   score: 5 / 5
+State:     NM
+   score: 5 / 5
+County:    Santa Fe
+   score: 5 / 5
+Longitude: 106d 13m 10s West   (-106.2194683)
+   (-106.2194683) should be (-106.219468)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+Latitude:   35d 15m 10s North   (35.2528197)
+   (35.2528197) should be (35.252820)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+
+   zero-point line
+FID:       904562
+   score: 5 / 5
+Name:      Canon del Agua
+   score: 5 / 5
+Type:      Valley
+   score: 5 / 5
+State:     NM
+   score: 5 / 5
+County:    Mora
+   score: 5 / 5
+Longitude: 105d 15m 25s West   (-105.2569559)
+   (-105.2569559) should be (-105.256956)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+Latitude:   35d 56m 50s North   (35.9472601)
+   (35.9472601) should be (35.947260)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+
+   zero-point line
+FID:       904563
+   score: 5 / 5
+Name:      Canon del Agua
+   score: 5 / 5
+Type:      Valley
+   score: 5 / 5
+State:     NM
+   score: 5 / 5
+County:    San Miguel
+   score: 5 / 5
+Longitude: 105d 16m 40s West   (-105.2777879)
+   (-105.2777879) should be (-105.277788)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+Latitude:   35d 40m 12s North   (35.6700424)
+   (35.6700424) should be (35.670042)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+
+   zero-point line
+FID:       904564
+   score: 5 / 5
+Name:      Canon del Agua
+   score: 5 / 5
+Type:      Valley
+   score: 5 / 5
+State:     NM
+   score: 5 / 5
+County:    Torrance
+   score: 5 / 5
+Longitude: 106d 19m 46s West   (-106.3294641)
+   (-106.3294641) should be (-106.329464)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+Latitude:   34d 41m 12s North   (34.6867257)
+   (34.6867257) should be (34.686726)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+
+   zero-point line
+FID:       904565
+   score: 5 / 5
+Name:      Canon del Agua
+   score: 5 / 5
+Type:      Valley
+   score: 5 / 5
+State:     NM
+   score: 5 / 5
+County:    Sandoval
+   score: 5 / 5
+Longitude: 106d 18m 23s West   (-106.306413)
+   score: 5 / 5
+Latitude:   35d 16m 56s North   (35.2822632)
+   (35.2822632) should be (35.282263)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+
+   zero-point line
+FID:       904566
+   score: 5 / 5
+Name:      Canon del Agua
+   score: 5 / 5
+Type:      Valley
+   score: 5 / 5
+State:     NM
+   score: 5 / 5
+County:    Sandoval
+   score: 5 / 5
+Longitude: 106d 32m 19s West   (-106.5386367)
+   (-106.5386367) should be (-106.538637)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+Latitude:   35d 18m 10s North   (35.3028177)
+   (35.3028177) should be (35.302818)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+
+   zero-point line
+---------------------------------------------------
+   zero-point line
+Cmd  8:  details_of	Navajo	NM
+   zero-point line
+
+   zero-point line
+FID:       899810
+   score: 5 / 5
+Name:      Navajo
+   score: 5 / 5
+Type:      Populated Place
+   score: 5 / 5
+State:     NM
+   score: 5 / 5
+County:    Rio Arriba
+   score: 5 / 5
+Longitude: 107d  3m 47s West   (-107.0630945)
+   (-107.0630945) should be (-107.063095)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+Latitude:   36d 56m 46s North   (36.9461201)
+   (36.9461201) should be (36.946120)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+
+   zero-point line
+---------------------------------------------------
+   zero-point line
+Cmd  9:  details_of	Smuggler Hills	NM
+   zero-point line
+
+   zero-point line
+FID:       901128
+   score: 5 / 5
+Name:      Smuggler Hills
+   score: 5 / 5
+Type:      Range
+   score: 5 / 5
+State:     NM
+   score: 5 / 5
+County:    Hidalgo
+   score: 5 / 5
+Longitude: 108d 38m 33s West   (-108.6425438)
+   (-108.6425438) should be (-108.642544)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+Latitude:   31d 27m 25s North   (31.4570498)
+   (31.4570498) should be (31.457050)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+
+   zero-point line
+---------------------------------------------------
+   zero-point line
+Cmd  10:  details_of	Capitan Pass	NM
+   zero-point line
+
+   zero-point line
+FID:       904748
+   score: 5 / 5
+Name:      Capitan Pass
+   score: 5 / 5
+Type:      Gap
+   score: 5 / 5
+State:     NM
+   score: 5 / 5
+County:    Lincoln
+   score: 5 / 5
+Longitude: 105d 28m  9s West   (-105.4691488)
+   (-105.4691488) should be (-105.469149)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+Latitude:   33d 37m 26s North   (33.6239698)
+   (33.6239698) should be (33.623970)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+
+   zero-point line
+---------------------------------------------------
+   zero-point line
+Cmd  11:  details_of	Bug Scuffle Hill	NM
+   zero-point line
+
+   zero-point line
+FID:       904166
+   score: 5 / 5
+Name:      Bug Scuffle Hill
+   score: 5 / 5
+Type:      Summit
+   score: 5 / 5
+State:     NM
+   score: 5 / 5
+County:    Otero
+   score: 5 / 5
+Longitude: 105d 48m 24s West   (-105.8066452)
+   (-105.8066452) should be (-105.806645)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+Latitude:   32d 38m 50s North   (32.6473173)
+   (32.6473173) should be (32.647317)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+
+   zero-point line
+---------------------------------------------------
+   zero-point line
+;
+   zero-point line
+; Some distance searches:
+   zero-point line
+Cmd  12:  distance_between	899789	899891
+   zero-point line
+
+   zero-point line
+First:	( 108d 51m 11s West,  34d 23m 33s North )  Mesita Blanca, NM
+   score: 10 / 10
+Second:	( 106d 52m 28s West,  33d 53m 34s North )  San Antonito, NM
+   score: 10 / 10
+Distance:  190.4km
+   score: 10 / 10
+---------------------------------------------------
+   zero-point line
+Cmd  13:  distance_between	899970	900565
+   zero-point line
+
+   zero-point line
+First:	( 107d 29m 33s West,  34d 59m 28s North )  Tze-Midi, NM
+   score: 10 / 10
+Second:	( 104d 59m 34s West,  36d 24m  2s North )  Toothache Spring, NM
+   score: 10 / 10
+Distance:  274.8km
+   score: 10 / 10
+---------------------------------------------------
+   zero-point line
+Cmd  14:  distance_between	901034	902240
+   zero-point line
+
+   zero-point line
+First:	( 105d 16m 20s West,  36d 23m  3s North )  Angel Fire Ski Area, NM
+   score: 10 / 10
+Second:	( 104d 29m 38s West,  36d 39m 54s North )  Eagle Rock, NM
+   score: 10 / 10
+Distance:  76.2km
+   score: 10 / 10
+---------------------------------------------------
+   zero-point line
+Cmd  15:  distance_between	903054	902746
+   zero-point line
+
+   zero-point line
+First:	( 105d 57m 37s West,  32d 53m 58s North )  Alamogordo, NM
+   score: 10 / 10
+Second:	( 106d 28m 31s West,  33d 40m 38s North )  Trinity Site, NM
+   score: 10 / 10
+Distance:  98.8km
+   score: 10 / 10
+---------------------------------------------------
+   zero-point line
+
+4 >> Score from stulog04.txt:  530 / 530
+================================================================================
+
+Testing with script05.txt
+Running student soln on ./scripts/script05.txt
+
+Running compare on reflog05.txt and stulog05.txt
+compare05.txt results:
+Comparing reference file ./logs/reflog05.txt to student file stulog05.txt:
+
+;
+   zero-point line
+; Existence searches that should find single matches:
+   zero-point line
+Cmd  1:  exists	Annandale High School	VA
+   zero-point line
+
+   zero-point line
+1 occurrences: Annandale High School VA
+   score: 10 / 10
+---------------------------------------------------
+   zero-point line
+Cmd  2:  exists	Lusters Gate	VA
+   zero-point line
+
+   zero-point line
+1 occurrences: Lusters Gate VA
+   score: 10 / 10
+---------------------------------------------------
+   zero-point line
+;
+   zero-point line
+; Some that should find multiple matches:
+   zero-point line
+Cmd  3:  exists	Back Creek	VA
+   zero-point line
+
+   zero-point line
+12 occurrences: Back Creek VA
+   score: 10 / 10
+---------------------------------------------------
+   zero-point line
+Cmd  4:  exists	Low Gap	VA
+   zero-point line
+
+   zero-point line
+9 occurrences: Low Gap VA
+   score: 10 / 10
+---------------------------------------------------
+   zero-point line
+;
+   zero-point line
+; Some details searches:
+   zero-point line
+Cmd  5:  details_of	Flounder Point	VA
+   zero-point line
+
+   zero-point line
+FID:       1466732
+   score: 5 / 5
+Name:      Flounder Point
+   score: 5 / 5
+Type:      Cape
+   score: 5 / 5
+State:     VA
+   score: 5 / 5
+County:    Accomack
+   score: 5 / 5
+Longitude: 075d 35m 30s West   (-75.591594)
+   score: 5 / 5
+Latitude:   37d 40m 42s North   (37.6784641)
+   (37.6784641) should be (37.678464)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+
+   zero-point line
+---------------------------------------------------
+   zero-point line
+Cmd  6:  details_of	Lusters Gate	VA
+   zero-point line
+
+   zero-point line
+FID:       1469939
+   score: 5 / 5
+Name:      Lusters Gate
+   score: 5 / 5
+Type:      Locale
+   score: 5 / 5
+State:     VA
+   score: 5 / 5
+County:    Montgomery
+   score: 5 / 5
+Longitude: 080d 21m 49s West   (-80.3636592)
+   (-80.3636592) should be (-80.363659)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+Latitude:   37d 14m 33s North   (37.2426298)
+   (37.2426298) should be (37.242630)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+
+   zero-point line
+---------------------------------------------------
+   zero-point line
+Cmd  7:  details_of	Nomini Cliffs	VA
+   zero-point line
+
+   zero-point line
+FID:       1471560
+   score: 5 / 5
+Name:      Nomini Cliffs
+   score: 5 / 5
+Type:      Cliff
+   score: 5 / 5
+State:     VA
+   score: 5 / 5
+County:    Westmoreland
+   score: 5 / 5
+Longitude: 076d 48m 41s West   (-76.8113548)
+   (-76.8113548) should be (-76.811355)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+Latitude:   38d  9m 58s North   (38.1662418)
+   (38.1662418) should be (38.166242)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+
+   zero-point line
+---------------------------------------------------
+   zero-point line
+Cmd  8:  details_of	Devils Backbone	VA
+   zero-point line
+
+   zero-point line
+FID:       1465740
+   score: 5 / 5
+Name:      Devils Backbone
+   score: 5 / 5
+Type:      Ridge
+   score: 5 / 5
+State:     VA
+   score: 5 / 5
+County:    Franklin
+   score: 5 / 5
+Longitude: 080d  6m 26s West   (-80.1072612)
+   (-80.1072612) should be (-80.107261)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+Latitude:   37d  2m  3s North   (37.0343031)
+   (37.0343031) should be (37.034303)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+
+   zero-point line
+FID:       1465741
+   score: 5 / 5
+Name:      Devils Backbone
+   score: 5 / 5
+Type:      Ridge
+   score: 5 / 5
+State:     VA
+   score: 5 / 5
+County:    Frederick
+   score: 5 / 5
+Longitude: 078d  5m 52s West   (-78.0977774)
+   (-78.0977774) should be (-78.097777)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+Latitude:   39d 12m 20s North   (39.2056591)
+   (39.2056591) should be (39.205659)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+
+   zero-point line
+---------------------------------------------------
+   zero-point line
+Cmd  9:  details_of	Difficult Creek	VA
+   zero-point line
+
+   zero-point line
+FID:       1465787
+   score: 5 / 5
+Name:      Difficult Creek
+   score: 5 / 5
+Type:      Stream
+   score: 5 / 5
+State:     VA
+   score: 5 / 5
+County:    Charlotte
+   score: 5 / 5
+Longitude: 078d 41m 16s West   (-78.6877821)
+   (-78.6877821) should be (-78.687782)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+Latitude:   36d 44m 42s North   (36.7451386)
+   (36.7451386) should be (36.745139)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+
+   zero-point line
+FID:       1465788
+   score: 5 / 5
+Name:      Difficult Creek
+   score: 5 / 5
+Type:      Stream
+   score: 5 / 5
+State:     VA
+   score: 5 / 5
+County:    Bedford
+   score: 5 / 5
+Longitude: 079d 31m 23s West   (-79.5230854)
+   (-79.5230854) should be (-79.523085)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+Latitude:   37d 10m 33s North   (37.1756995)
+   (37.1756995) should be (37.175700)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+
+   zero-point line
+---------------------------------------------------
+   zero-point line
+Cmd  10:  details_of	Flowerdew Hundred	VA
+   zero-point line
+
+   zero-point line
+FID:       1466738
+   score: 5 / 5
+Name:      Flowerdew Hundred
+   score: 5 / 5
+Type:      Flat
+   score: 5 / 5
+State:     VA
+   score: 5 / 5
+County:    Prince George
+   score: 5 / 5
+Longitude: 077d  5m 54s West   (-77.0983042)
+   (-77.0983042) should be (-77.098304)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+Latitude:   37d 17m 39s North   (37.2940372)
+   (37.2940372) should be (37.294037)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+
+   zero-point line
+---------------------------------------------------
+   zero-point line
+;
+   zero-point line
+; Some distance searches:
+   zero-point line
+Cmd  11:  distance_between	1463750	1467851
+   zero-point line
+
+   zero-point line
+First:	( 079d 41m 52s West,  37d 16m  9s North )  Bramletts Mountain, VA
+   score: 10 / 10
+Second:	( 078d 23m 11s West,  38d 33m 24s North )  Hawksbill Gap, VA
+   score: 10 / 10
+Distance:  183.7km
+   score: 10 / 10
+---------------------------------------------------
+   zero-point line
+Cmd  12:  distance_between	1472187	1465729
+   zero-point line
+
+   zero-point line
+First:	( 076d 34m 53s West,  37d 16m 45s North )  Penniman Spit, VA
+   score: 10 / 10
+Second:	( 080d 19m 11s West,  37d  8m 47s North )  Den Hill, VA
+   score: 10 / 10
+Distance:  331.4km
+   score: 10 / 10
+---------------------------------------------------
+   zero-point line
+Cmd  13:  distance_between	1466738	1470021
+   zero-point line
+
+   zero-point line
+First:	( 077d  5m 54s West,  37d 17m 39s North )  Flowerdew Hundred, VA
+   score: 10 / 10
+Second:	( 082d 21m  2s West,  36d 55m 55s North )  Maize Hollow, VA
+   score: 10 / 10
+Distance:  467.4km
+   score: 10 / 10
+---------------------------------------------------
+   zero-point line
+
+5 >> Score from stulog05.txt:  410 / 410
+================================================================================
+
+Testing with script06.txt
+Running student soln on ./scripts/script06.txt
+
+Running compare on reflog06.txt and stulog06.txt
+compare06.txt results:
+Comparing reference file ./logs/reflog06.txt to student file stulog06.txt:
+
+;
+   zero-point line
+; Details searches:
+   zero-point line
+Cmd  1:  details_of	Leadville	CO
+   zero-point line
+
+   zero-point line
+FID:       204683
+   score: 5 / 5
+Name:      Leadville
+   score: 5 / 5
+Type:      Populated Place
+   score: 5 / 5
+State:     CO
+   score: 5 / 5
+County:    Lake
+   score: 5 / 5
+Longitude: 106d 17m 33s West   (-106.292524)
+   score: 5 / 5
+Latitude:   39d 15m  3s North   (39.250823)
+   score: 5 / 5
+
+   zero-point line
+---------------------------------------------------
+   zero-point line
+Cmd  2:  details_of	McBryde Hall	VA
+   zero-point line
+
+   zero-point line
+FID:       1674617
+   score: 5 / 5
+Name:      McBryde Hall
+   score: 5 / 5
+Type:      Building
+   score: 5 / 5
+State:     VA
+   score: 5 / 5
+County:    Montgomery
+   score: 5 / 5
+Longitude: 080d 25m 19s West   (-80.421995)
+   score: 5 / 5
+Latitude:   37d 13m 49s North   (37.230407)
+   score: 5 / 5
+
+   zero-point line
+---------------------------------------------------
+   zero-point line
+Cmd  3:  details_of	Uncompahgre Butte	CO
+   zero-point line
+
+   zero-point line
+FID:       185583
+   score: 5 / 5
+Name:      Uncompahgre Butte
+   score: 5 / 5
+Type:      Summit
+   score: 5 / 5
+State:     CO
+   score: 5 / 5
+County:    Mesa
+   score: 5 / 5
+Longitude: 108d 38m 51s West   (-108.647595)
+   score: 5 / 5
+Latitude:   38d 34m 36s North   (38.576654)
+   score: 5 / 5
+
+   zero-point line
+---------------------------------------------------
+   zero-point line
+Cmd  4:  details_of	Asaga Strait	AS
+   zero-point line
+
+   zero-point line
+FID:       1388698
+   score: 5 / 5
+Name:      Asaga Strait
+   score: 5 / 5
+Type:      Channel
+   score: 5 / 5
+State:     AS
+   score: 5 / 5
+County:    Manu‘a District
+   score: 5 / 5
+Longitude: 169d 37m 49s West   (-169.630278)
+   score: 5 / 5
+Latitude:   14d 10m 26s South   (-14.173889)
+   score: 5 / 5
+
+   zero-point line
+FID:       1388699
+   score: 5 / 5
+Name:      Asaga Strait
+   score: 5 / 5
+Type:      Channel
+   score: 5 / 5
+State:     AS
+   score: 5 / 5
+County:    Eastern
+   score: 5 / 5
+Longitude: 170d 37m 25s West   (-170.623611)
+   score: 5 / 5
+Latitude:   14d 15m 20s South   (-14.255556)
+   score: 5 / 5
+
+   zero-point line
+---------------------------------------------------
+   zero-point line
+;
+   zero-point line
+; Some that need to pay attention to the state abbreviation:
+   zero-point line
+Cmd  5:  details_of	Mount Pleasant	IA
+   zero-point line
+
+   zero-point line
+FID:       459328
+   score: 5 / 5
+Name:      Mount Pleasant
+   score: 5 / 5
+Type:      Populated Place
+   score: 5 / 5
+State:     IA
+   score: 5 / 5
+County:    Henry
+   score: 5 / 5
+Longitude: 091d 33m 29s West   (-91.557938)
+   score: 5 / 5
+Latitude:   40d 57m 49s North   (40.963640)
+   score: 5 / 5
+
+   zero-point line
+---------------------------------------------------
+   zero-point line
+Cmd  6:  details_of	Mount Pleasant	IL
+   zero-point line
+
+   zero-point line
+FID:       414041
+   score: 5 / 5
+Name:      Mount Pleasant
+   score: 5 / 5
+Type:      Populated Place
+   score: 5 / 5
+State:     IL
+   score: 5 / 5
+County:    Union
+   score: 5 / 5
+Longitude: 089d  4m 25s West   (-89.073686)
+   score: 5 / 5
+Latitude:   37d 27m  7s North   (37.451995)
+   score: 5 / 5
+
+   zero-point line
+---------------------------------------------------
+   zero-point line
+;
+   zero-point line
+; Distance searches:
+   zero-point line
+Cmd  7:  distance_between	1388778	188771
+   zero-point line
+
+   zero-point line
+First:	( 170d 48m 18s West,  14d 20m 10s South )  Fagamutu, AS
+   score: 10 / 10
+Second:	( 106d 53m 28s West,  38d 59m 35s North )  Conundrum Basin, CO
+   score: 10 / 10
+Distance:  8884.8km
+   score: 10 / 10
+---------------------------------------------------
+   zero-point line
+Cmd  8:  distance_between	1388698	1390084
+   zero-point line
+
+   zero-point line
+First:	( 169d 37m 49s West,  14d 10m 26s South )  Asaga Strait, AS
+   score: 10 / 10
+Second:	( 144d 45m 11s East,  13d 21m  6s North )  Talofofo, GU
+   score: 10 / 10
+Distance:  5881.6km
+   score: 10 / 10
+---------------------------------------------------
+   zero-point line
+Cmd  9:  distance_between	188777	1674617
+   zero-point line
+
+   zero-point line
+First:	( 106d 59m 23s West,  38d 57m 33s North )  Gothic, CO
+   score: 10 / 10
+Second:	( 080d 25m 19s West,  37d 13m 49s North )  McBryde Hall, VA
+   score: 10 / 10
+Distance:  2324.6km
+   score: 10 / 10
+---------------------------------------------------
+   zero-point line
+Cmd  10:  distance_between	1498405	1498467
+   zero-point line
+
+   zero-point line
+First:	( 080d 24m 50s West,  37d 13m 46s North )  Blacksburg, VA
+   score: 10 / 10
+Second:	( 080d 24m 32s West,  37d  7m 47s North )  Christiansburg, VA
+   score: 10 / 10
+Distance:  11.1km
+   score: 10 / 10
+---------------------------------------------------
+   zero-point line
+Cmd  11:  distance_between	459328	414041
+   zero-point line
+
+   zero-point line
+First:	( 091d 33m 29s West,  40d 57m 49s North )  Mount Pleasant, IA
+   score: 10 / 10
+Second:	( 089d  4m 25s West,  37d 27m  7s North )  Mount Pleasant, IL
+   score: 10 / 10
+Distance:  445.2km
+   score: 10 / 10
+---------------------------------------------------
+   zero-point line
+
+6 >> Score from stulog06.txt:  395 / 395
+================================================================================
+
+Testing with script07.txt
+Running student soln on ./scripts/script07.txt
+
+Running compare on reflog07.txt and stulog07.txt
+compare07.txt results:
+Comparing reference file ./logs/reflog07.txt to student file stulog07.txt:
+
+;
+   zero-point line
+; Existence search that should find NO match:
+   zero-point line
+Cmd  1:  exists	No Such Place	NM
+   zero-point line
+
+   zero-point line
+Not found in index: No Such Place NM
+   score: 10 / 10
+---------------------------------------------------
+   zero-point line
+;
+   zero-point line
+; Details searches that should find single matches:
+   zero-point line
+Cmd  2:  details_of	No Such Place	NM
+   zero-point line
+
+   zero-point line
+Not found in index: No Such Place NM
+   score: 5 / 5
+---------------------------------------------------
+   zero-point line
+;
+   zero-point line
+; Distance_between searches:
+   zero-point line
+Cmd  3:  distance_between	101010	202020
+   zero-point line
+
+   zero-point line
+Invalid feature ID: 101010
+   score: 10 / 10
+---------------------------------------------------
+   zero-point line
+
+7 >> Score from stulog07.txt:  25 / 25
+================================================================================
+
+Testing with script08.txt
+Running student soln on ./scripts/script08.txt
+
+Running compare on reflog08.txt and stulog08.txt
+compare08.txt results:
+Comparing reference file ./logs/reflog08.txt to student file stulog08.txt:
+
+;
+   zero-point line
+; Existence searches:
+   zero-point line
+Cmd  1:  exists	Jemez Falls	NM
+   zero-point line
+
+   zero-point line
+1 occurrences: Jemez Falls NM
+   score: 10 / 10
+---------------------------------------------------
+   zero-point line
+Cmd  2:  exists	Bosque del Apache National Wildlife Refuge	NM
+   zero-point line
+
+   zero-point line
+1 occurrences: Bosque del Apache National Wildlife Refuge NM
+   score: 10 / 10
+---------------------------------------------------
+   zero-point line
+;
+   zero-point line
+; Some details searches:
+   zero-point line
+Cmd  3:  details_of	Jemez Falls	NM
+   zero-point line
+
+   zero-point line
+FID:       907344
+   score: 5 / 5
+Name:      Jemez Falls
+   score: 5 / 5
+Type:      Falls
+   score: 5 / 5
+State:     NM
+   score: 5 / 5
+County:    Sandoval
+   score: 5 / 5
+Longitude: 106d 36m 24s West   (-106.6065808)
+   (-106.6065808) should be (-106.606581)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+Latitude:   35d 48m 46s North   (35.81268)
+   (35.81268) should be (35.812680)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+
+   zero-point line
+---------------------------------------------------
+   zero-point line
+Cmd  4:  details_of	Bosque del Apache National Wildlife Refuge	NM
+   zero-point line
+
+   zero-point line
+FID:       920422
+   score: 5 / 5
+Name:      Bosque del Apache National Wildlife Refuge
+   score: 5 / 5
+Type:      Park
+   score: 5 / 5
+State:     NM
+   score: 5 / 5
+County:    Socorro
+   score: 5 / 5
+Longitude: 106d 53m 32s West   (-106.8922528)
+   (-106.8922528) should be (-106.892253)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+Latitude:   34d 48m 20s North   (34.8056098)
+   (34.8056098) should be (34.805610)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+
+   zero-point line
+---------------------------------------------------
+   zero-point line
+Cmd  5:  details_of	Aztec Ruins National Monument	NM
+   zero-point line
+
+   zero-point line
+FID:       885961
+   score: 5 / 5
+Name:      Aztec Ruins National Monument
+   score: 5 / 5
+Type:      Park
+   score: 5 / 5
+State:     NM
+   score: 5 / 5
+County:    San Juan
+   score: 5 / 5
+Longitude: 107d 59m 53s West   (-107.9981235)
+   (-107.9981235) should be (-107.998124)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+Latitude:   36d 50m  9s North   (36.835837)
+   score: 5 / 5
+
+   zero-point line
+---------------------------------------------------
+   zero-point line
+Cmd  6:  details_of	Screaming Left Hand Turn	NM
+   zero-point line
+
+   zero-point line
+FID:       925096
+   score: 5 / 5
+Name:      Screaming Left Hand Turn
+   score: 5 / 5
+Type:      Rapids
+   score: 5 / 5
+State:     NM
+   score: 5 / 5
+County:    Taos
+   score: 5 / 5
+Longitude: 106d 40m 25s West   (-106.673648)
+   score: 5 / 5
+Latitude:   36d 21m  3s North   (36.350849)
+   score: 5 / 5
+
+   zero-point line
+---------------------------------------------------
+   zero-point line
+;
+   zero-point line
+; Some distance searches:
+   zero-point line
+Cmd  7:  distance_between	906350	920422
+   zero-point line
+
+   zero-point line
+First:	( 106d 30m  8s West,  35d  3m 30s North )  Four Hills Ranch, NM
+   score: 10 / 10
+Second:	( 106d 53m 32s West,  34d 48m 20s North )  Bosque del Apache National Wildlife Refuge, NM
+   score: 10 / 10
+Distance:  45.3km
+   score: 10 / 10
+---------------------------------------------------
+   zero-point line
+Cmd  8:  distance_between	2095890	885961
+   zero-point line
+
+   zero-point line
+First:	( 104d 31m 24s West,  33d 18m 21s North )  Roswell Army Air Field (historical), NM
+   score: 10 / 10
+Second:	( 107d 59m 53s West,  36d 50m  9s North )  Aztec Ruins National Monument, NM
+   score: 10 / 10
+Distance:  504.0km
+   score: 10 / 10
+---------------------------------------------------
+   zero-point line
+Cmd  9:  distance_between	925103	906605
+   zero-point line
+
+   zero-point line
+First:	( 105d 23m 58s West,  35d 24m 14s North )  Dead Horse, NM
+   score: 10 / 10
+Second:	( 108d 50m  1s West,  33d 22m 35s North )  Gold Dust Gulch, NM
+   score: 10 / 10
+Distance:  387.4km
+   score: 10 / 10
+---------------------------------------------------
+   zero-point line
+
+8 >> Score from stulog08.txt:  250 / 250
+================================================================================
+
+Testing with script09.txt
+Running student soln on ./scripts/script09.txt
+
+Running compare on reflog09.txt and stulog09.txt
+compare09.txt results:
+Comparing reference file ./logs/reflog09.txt to student file stulog09.txt:
+
+;
+   zero-point line
+; Existence searches that should find single matches:
+   zero-point line
+Cmd  1:  exists	Annandale High School	VA
+   zero-point line
+
+   zero-point line
+1 occurrences: Annandale High School VA
+   score: 10 / 10
+---------------------------------------------------
+   zero-point line
+Cmd  2:  exists	Lusters Gate	VA
+   zero-point line
+
+   zero-point line
+1 occurrences: Lusters Gate VA
+   score: 10 / 10
+---------------------------------------------------
+   zero-point line
+;
+   zero-point line
+; Some that should find multiple matches:
+   zero-point line
+Cmd  3:  exists	Back Creek	VA
+   zero-point line
+
+   zero-point line
+18 occurrences: Back Creek VA
+   score: 10 / 10
+---------------------------------------------------
+   zero-point line
+Cmd  4:  exists	Low Gap	VA
+   zero-point line
+
+   zero-point line
+15 occurrences: Low Gap VA
+   score: 10 / 10
+---------------------------------------------------
+   zero-point line
+;
+   zero-point line
+; Some details searches:
+   zero-point line
+Cmd  5:  details_of	Flounder Point	VA
+   zero-point line
+
+   zero-point line
+FID:       1466732
+   score: 5 / 5
+Name:      Flounder Point
+   score: 5 / 5
+Type:      Cape
+   score: 5 / 5
+State:     VA
+   score: 5 / 5
+County:    Accomack
+   score: 5 / 5
+Longitude: 075d 35m 30s West   (-75.591594)
+   score: 5 / 5
+Latitude:   37d 40m 42s North   (37.6784641)
+   (37.6784641) should be (37.678464)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+
+   zero-point line
+---------------------------------------------------
+   zero-point line
+Cmd  6:  details_of	Lusters Gate	VA
+   zero-point line
+
+   zero-point line
+FID:       1469939
+   score: 5 / 5
+Name:      Lusters Gate
+   score: 5 / 5
+Type:      Locale
+   score: 5 / 5
+State:     VA
+   score: 5 / 5
+County:    Montgomery
+   score: 5 / 5
+Longitude: 080d 21m 49s West   (-80.3636592)
+   (-80.3636592) should be (-80.363659)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+Latitude:   37d 14m 33s North   (37.2426298)
+   (37.2426298) should be (37.242630)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+
+   zero-point line
+---------------------------------------------------
+   zero-point line
+Cmd  7:  details_of	Nomini Cliffs	VA
+   zero-point line
+
+   zero-point line
+FID:       1471560
+   score: 5 / 5
+Name:      Nomini Cliffs
+   score: 5 / 5
+Type:      Cliff
+   score: 5 / 5
+State:     VA
+   score: 5 / 5
+County:    Westmoreland
+   score: 5 / 5
+Longitude: 076d 48m 41s West   (-76.8113548)
+   (-76.8113548) should be (-76.811355)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+Latitude:   38d  9m 58s North   (38.1662418)
+   (38.1662418) should be (38.166242)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+
+   zero-point line
+---------------------------------------------------
+   zero-point line
+Cmd  8:  details_of	Devils Backbone	VA
+   zero-point line
+
+   zero-point line
+FID:       1465740
+   score: 5 / 5
+Name:      Devils Backbone
+   score: 5 / 5
+Type:      Ridge
+   score: 5 / 5
+State:     VA
+   score: 5 / 5
+County:    Franklin
+   score: 5 / 5
+Longitude: 080d  6m 26s West   (-80.1072612)
+   (-80.1072612) should be (-80.107261)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+Latitude:   37d  2m  3s North   (37.0343031)
+   (37.0343031) should be (37.034303)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+
+   zero-point line
+FID:       1465741
+   score: 5 / 5
+Name:      Devils Backbone
+   score: 5 / 5
+Type:      Ridge
+   score: 5 / 5
+State:     VA
+   score: 5 / 5
+County:    Frederick
+   score: 5 / 5
+Longitude: 078d  5m 52s West   (-78.0977774)
+   (-78.0977774) should be (-78.097777)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+Latitude:   39d 12m 20s North   (39.2056591)
+   (39.2056591) should be (39.205659)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+
+   zero-point line
+FID:       1482986
+   score: 5 / 5
+Name:      Devils Backbone
+   score: 5 / 5
+Type:      Ridge
+   score: 5 / 5
+State:     VA
+   score: 5 / 5
+County:    Highland
+   score: 5 / 5
+Longitude: 079d 31m 34s West   (-79.5261585)
+   (-79.5261585) should be (-79.526158)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+Latitude:   38d 30m 50s North   (38.5140075)
+   (38.5140075) should be (38.514007)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+
+   zero-point line
+---------------------------------------------------
+   zero-point line
+Cmd  9:  details_of	Difficult Creek	VA
+   zero-point line
+
+   zero-point line
+FID:       1465787
+   score: 5 / 5
+Name:      Difficult Creek
+   score: 5 / 5
+Type:      Stream
+   score: 5 / 5
+State:     VA
+   score: 5 / 5
+County:    Charlotte
+   score: 5 / 5
+Longitude: 078d 41m 16s West   (-78.6877821)
+   (-78.6877821) should be (-78.687782)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+Latitude:   36d 44m 42s North   (36.7451386)
+   (36.7451386) should be (36.745139)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+
+   zero-point line
+FID:       1465788
+   score: 5 / 5
+Name:      Difficult Creek
+   score: 5 / 5
+Type:      Stream
+   score: 5 / 5
+State:     VA
+   score: 5 / 5
+County:    Bedford
+   score: 5 / 5
+Longitude: 079d 31m 23s West   (-79.5230854)
+   (-79.5230854) should be (-79.523085)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+Latitude:   37d 10m 33s North   (37.1756995)
+   (37.1756995) should be (37.175700)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+
+   zero-point line
+---------------------------------------------------
+   zero-point line
+Cmd  10:  details_of	Flowerdew Hundred	VA
+   zero-point line
+
+   zero-point line
+FID:       1466738
+   score: 5 / 5
+Name:      Flowerdew Hundred
+   score: 5 / 5
+Type:      Flat
+   score: 5 / 5
+State:     VA
+   score: 5 / 5
+County:    Prince George
+   score: 5 / 5
+Longitude: 077d  5m 54s West   (-77.0983042)
+   (-77.0983042) should be (-77.098304)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+Latitude:   37d 17m 39s North   (37.2940372)
+   (37.2940372) should be (37.294037)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+
+   zero-point line
+---------------------------------------------------
+   zero-point line
+;
+   zero-point line
+; Some distance searches:
+   zero-point line
+Cmd  11:  distance_between	1463750	1467851
+   zero-point line
+
+   zero-point line
+First:	( 079d 41m 52s West,  37d 16m  9s North )  Bramletts Mountain, VA
+   score: 10 / 10
+Second:	( 078d 23m 11s West,  38d 33m 24s North )  Hawksbill Gap, VA
+   score: 10 / 10
+Distance:  183.7km
+   score: 10 / 10
+---------------------------------------------------
+   zero-point line
+Cmd  12:  distance_between	1472187	1465729
+   zero-point line
+
+   zero-point line
+First:	( 076d 34m 53s West,  37d 16m 45s North )  Penniman Spit, VA
+   score: 10 / 10
+Second:	( 080d 19m 11s West,  37d  8m 47s North )  Den Hill, VA
+   score: 10 / 10
+Distance:  331.4km
+   score: 10 / 10
+---------------------------------------------------
+   zero-point line
+Cmd  13:  distance_between	1466738	1470021
+   zero-point line
+
+   zero-point line
+First:	( 077d  5m 54s West,  37d 17m 39s North )  Flowerdew Hundred, VA
+   score: 10 / 10
+Second:	( 082d 21m  2s West,  36d 55m 55s North )  Maize Hollow, VA
+   score: 10 / 10
+Distance:  467.4km
+   score: 10 / 10
+---------------------------------------------------
+   zero-point line
+
+9 >> Score from stulog09.txt:  445 / 445
+================================================================================
+
+
+Details from valgrind check:
+
+==13050== Memcheck, a memory error detector
+==13050== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==13050== Using Valgrind-3.14.0-353a3587bb-20181007X and LibVEX; rerun with -h for copyright info
+==13050== Command: ./c08 ./scripts/script04.txt ./stuvgrindLog.txt
+==13050== Parent PID: 13048
+==13050== 
+--13050-- 
+--13050-- Valgrind options:
+--13050--    --leak-check=full
+--13050--    --show-leak-kinds=all
+--13050--    --log-file=vgrindLog.txt
+--13050--    --track-origins=yes
+--13050--    -v
+--13050-- Contents of /proc/version:
+--13050--   Linux version 3.10.0-1062.4.3.el7.x86_64 (mockbuild@kbuilder.bsys.centos.org) (gcc version 4.8.5 20150623 (Red Hat 4.8.5-39) (GCC) ) #1 SMP Wed Nov 13 23:58:53 UTC 2019
+--13050-- 
+--13050-- Arch and hwcaps: AMD64, LittleEndian, amd64-cx16-lzcnt-rdtscp-sse3-avx-avx2
+--13050-- Page sizes: currently 4096, max supported 4096
+--13050-- Valgrind library directory: /usr/lib64/valgrind
+--13050-- Reading syms from /home/rmanfred/2505/C08/testing/grading/c08
+--13050-- Reading syms from /usr/lib64/ld-2.17.so
+--13050--   Considering /usr/lib/debug/.build-id/5c/c1a53b747a7e4d21198723c2b633e54f3c06d9.debug ..
+--13050--   .. build-id is valid
+--13050-- Reading syms from /usr/lib64/valgrind/memcheck-amd64-linux
+--13050--    object doesn't have a symbol table
+--13050--    object doesn't have a dynamic symbol table
+--13050-- Scheduler: using generic scheduler lock implementation.
+--13050-- Reading suppressions file: /usr/lib64/valgrind/default.supp
+==13050== embedded gdbserver: reading from /tmp/vgdb-pipe-from-vgdb-to-13050-by-rmanfred-on-localhost.localdomain
+==13050== embedded gdbserver: writing to   /tmp/vgdb-pipe-to-vgdb-from-13050-by-rmanfred-on-localhost.localdomain
+==13050== embedded gdbserver: shared mem   /tmp/vgdb-pipe-shared-mem-vgdb-13050-by-rmanfred-on-localhost.localdomain
+==13050== 
+==13050== TO CONTROL THIS PROCESS USING vgdb (which you probably
+==13050== don't want to do, unless you know exactly what you're doing,
+==13050== or are doing some strange experiment):
+==13050==   /usr/lib64/valgrind/../../bin/vgdb --pid=13050 ...command...
+==13050== 
+==13050== TO DEBUG THIS PROCESS USING GDB: start GDB like this
+==13050==   /path/to/gdb ./c08
+==13050== and then give GDB the following command
+==13050==   target remote | /usr/lib64/valgrind/../../bin/vgdb --pid=13050
+==13050== --pid is optional if only one valgrind process is running
+==13050== 
+--13050-- REDIR: 0x4019df0 (ld-linux-x86-64.so.2:strlen) redirected to 0x580c66c5 (???)
+--13050-- REDIR: 0x4019bc0 (ld-linux-x86-64.so.2:index) redirected to 0x580c66df (???)
+--13050-- Reading syms from /usr/lib64/valgrind/vgpreload_core-amd64-linux.so
+--13050-- Reading syms from /usr/lib64/valgrind/vgpreload_memcheck-amd64-linux.so
+==13050== WARNING: new redirection conflicts with existing -- ignoring it
+--13050--     old: 0x04019df0 (strlen              ) R-> (0000.0) 0x580c66c5 ???
+--13050--     new: 0x04019df0 (strlen              ) R-> (2007.0) 0x04c2d0e0 strlen
+--13050-- REDIR: 0x4019d70 (ld-linux-x86-64.so.2:strcmp) redirected to 0x4c2e230 (strcmp)
+--13050-- REDIR: 0x401aa30 (ld-linux-x86-64.so.2:mempcpy) redirected to 0x4c31de0 (mempcpy)
+--13050-- Reading syms from /usr/lib64/libm-2.17.so
+--13050--   Considering /usr/lib/debug/.build-id/56/81c054fdabcf789f4dda66e94f1f6ed1747327.debug ..
+--13050--   .. build-id is valid
+--13050-- Reading syms from /usr/lib64/libc-2.17.so
+--13050--   Considering /usr/lib/debug/.build-id/39/8944d32cf16a67af51067a326e6c0cc14f90ed.debug ..
+--13050--   .. build-id is valid
+--13050-- REDIR: 0x51c90e0 (libc.so.6:strcasecmp) redirected to 0x4a247a0 (_vgnU_ifunc_wrapper)
+--13050-- REDIR: 0x51c5e60 (libc.so.6:strnlen) redirected to 0x4a247a0 (_vgnU_ifunc_wrapper)
+--13050-- REDIR: 0x51cb3b0 (libc.so.6:strncasecmp) redirected to 0x4a247a0 (_vgnU_ifunc_wrapper)
+--13050-- REDIR: 0x51c88c0 (libc.so.6:memset) redirected to 0x4a247a0 (_vgnU_ifunc_wrapper)
+--13050-- REDIR: 0x51c8870 (libc.so.6:memcpy@GLIBC_2.2.5) redirected to 0x4a247a0 (_vgnU_ifunc_wrapper)
+--13050-- REDIR: 0x51c7850 (libc.so.6:__GI_strrchr) redirected to 0x4c2caa0 (__GI_strrchr)
+--13050-- REDIR: 0x51bf4b0 (libc.so.6:calloc) redirected to 0x4c2bf23 (calloc)
+--13050-- REDIR: 0x51bea90 (libc.so.6:malloc) redirected to 0x4c29e1c (malloc)
+--13050-- REDIR: 0x51de8d0 (libc.so.6:__GI_strstr) redirected to 0x4c32070 (__strstr_sse2)
+--13050-- REDIR: 0x51c7f50 (libc.so.6:memchr) redirected to 0x4c2e2d0 (memchr)
+--13050-- REDIR: 0x51cdaf0 (libc.so.6:__GI_memcpy) redirected to 0x4c2eee0 (__GI_memcpy)
+--13050-- REDIR: 0x51dee90 (libc.so.6:strstr) redirected to 0x4a247a0 (_vgnU_ifunc_wrapper)
+--13050-- REDIR: 0x5279c70 (libc.so.6:__strstr_sse42) redirected to 0x4c32100 (__strstr_sse42)
+--13050-- REDIR: 0x51cf160 (libc.so.6:__GI___rawmemchr) redirected to 0x4c31960 (__GI___rawmemchr)
+--13050-- REDIR: 0x51beeb0 (libc.so.6:free) redirected to 0x4c2af16 (free)
+--13050-- REDIR: 0x51c5d30 (libc.so.6:strlen) redirected to 0x4a247a0 (_vgnU_ifunc_wrapper)
+--13050-- REDIR: 0x52a8630 (libc.so.6:__strlen_sse2_pminub) redirected to 0x4c2d020 (strlen)
+--13050-- REDIR: 0x51c5770 (libc.so.6:strcpy) redirected to 0x4a247a0 (_vgnU_ifunc_wrapper)
+--13050-- REDIR: 0x51d3690 (libc.so.6:__strcpy_sse2_unaligned) redirected to 0x4c2d100 (strcpy)
+--13050-- REDIR: 0x51bef90 (libc.so.6:realloc) redirected to 0x4c2c0f5 (realloc)
+--13050-- REDIR: 0x51c4020 (libc.so.6:strcat) redirected to 0x4a247a0 (_vgnU_ifunc_wrapper)
+--13050-- REDIR: 0x51d64b0 (libc.so.6:__strcat_sse2_unaligned) redirected to 0x4c2ccd0 (strcat)
+--13050-- REDIR: 0x51cda80 (libc.so.6:memcpy@@GLIBC_2.14) redirected to 0x4a247a0 (_vgnU_ifunc_wrapper)
+--13050-- REDIR: 0x528d9f0 (libc.so.6:__memcpy_ssse3_back) redirected to 0x4c2e6e0 (memcpy@@GLIBC_2.14)
+--13050-- REDIR: 0x51c42e0 (libc.so.6:strcmp) redirected to 0x4a247a0 (_vgnU_ifunc_wrapper)
+--13050-- REDIR: 0x5277d40 (libc.so.6:__strcmp_sse42) redirected to 0x4c2e1e0 (__strcmp_sse42)
+--13050-- REDIR: 0x51c5d80 (libc.so.6:__GI_strlen) redirected to 0x4c2d040 (__GI_strlen)
+--13050-- REDIR: 0x51c8a90 (libc.so.6:__GI_mempcpy) redirected to 0x4c31b10 (__GI_mempcpy)
+--13050-- REDIR: 0x51cf370 (libc.so.6:strchrnul) redirected to 0x4c31900 (strchrnul)
+==13050== 
+==13050== HEAP SUMMARY:
+==13050==     in use at exit: 0 bytes in 0 blocks
+==13050==   total heap usage: 334,575 allocs, 334,575 frees, 20,370,433 bytes allocated
+==13050== 
+==13050== All heap blocks were freed -- no leaks are possible
+==13050== 
+==13050== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==13050== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+================================================================================
+Results from buildLog.txt
+Executing gradeC08.sh...
+
+Creating build subdirectory
+
+Student's tar file contains:
+-rw------- rmanfred/rmanfred 16792 2019-12-06 20:12 c08driver.c
+-rw------- rmanfred/rmanfred  1194 2019-11-30 17:58 FIDouble.h
+-rw-rw-r-- rmanfred/rmanfred  4457 2019-12-06 18:35 StringBundle.c
+-rw-rw-r-- rmanfred/rmanfred  1959 2019-07-31 15:53 StringBundle.h
+-rw-rw-r-- rmanfred/rmanfred  4412 2019-10-22 21:42 StringHashTable.h
+-rw-rw-r-- rmanfred/rmanfred  7800 2019-10-22 21:42 StringHashTable.o
+
+Copying the student's .c and .h files to the build directory:
+
+total 52
+-rw-------. 1 rmanfred rmanfred 16792 Dec  6 20:39 c08driver.c
+-rw-------. 1 rmanfred rmanfred  1194 Dec  6 20:39 FIDouble.h
+-rw-------. 1 rmanfred rmanfred  4457 Dec  6 20:39 StringBundle.c
+-rw-------. 1 rmanfred rmanfred  1959 Dec  6 20:39 StringBundle.h
+-rw-------. 1 rmanfred rmanfred  4412 Dec  6 20:39 StringHashTable.h
+-rw-------. 1 rmanfred rmanfred  7800 Dec  6 20:39 StringHashTable.o
+
+Compiling the submitted files:
+gcc -o c08 -std=c11 -Wall -W -ggdb3 -lm c08driver.c StringBundle.c StringHashTable.o
+
+================================================================================
+

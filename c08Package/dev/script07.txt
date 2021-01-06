@@ -1,0 +1,18 @@
+; Script 7:  1000-element db file, duplicate feature names
+;            failed exists commands
+;            failed details commands
+;            failed distance_between commands
+;
+; Execution:  gis script07.txt log07.txt
+;
+db_file	NM_1000.txt
+table_sz	2000
+;
+; Existence search that should find NO match:
+exists	No Such Place	NM
+;
+; Details searches that should find single matches:
+details_of	No Such Place	NM
+;
+; Distance_between searches:
+distance_between	101010	202020

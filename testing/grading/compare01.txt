@@ -1,0 +1,114 @@
+Comparing reference file ./logs/reflog01.txt to student file stulog01.txt:
+
+;
+   zero-point line
+; Existence searches that should find single matches:
+   zero-point line
+Cmd  1:  exists	Windmill	NM
+   zero-point line
+
+   zero-point line
+1 occurrences: Windmill NM
+   score: 10 / 10
+---------------------------------------------------
+   zero-point line
+Cmd  2:  exists	Last Canyon	NM
+   zero-point line
+
+   zero-point line
+1 occurrences: Last Canyon NM
+   score: 10 / 10
+---------------------------------------------------
+   zero-point line
+Cmd  3:  exists	Yucca Tank	NM
+   zero-point line
+
+   zero-point line
+1 occurrences: Yucca Tank NM
+   score: 10 / 10
+---------------------------------------------------
+   zero-point line
+;
+   zero-point line
+; Details searches that should find single matches:
+   zero-point line
+Cmd  4:  details_of	Windmill	NM
+   zero-point line
+
+   zero-point line
+FID:       924890
+   score: 5 / 5
+Name:      Windmill
+   score: 5 / 5
+Type:      Populated Place
+   score: 5 / 5
+State:     NM
+   score: 5 / 5
+County:    Hidalgo
+   score: 5 / 5
+Longitude: 108d 37m 30s West   (-108.6250518)
+   (-108.6250518) should be (-108.625052)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+Latitude:   31d 58m 40s North   (31.9778689)
+   (31.9778689) should be (31.977869)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+
+   zero-point line
+---------------------------------------------------
+   zero-point line
+Cmd  5:  details_of	Last Canyon	NM
+   zero-point line
+
+   zero-point line
+FID:       924857
+   score: 5 / 5
+Name:      Last Canyon
+   score: 5 / 5
+Type:      Valley
+   score: 5 / 5
+State:     NM
+   score: 5 / 5
+County:    San Juan
+   score: 5 / 5
+Longitude: 108d 56m 30s West   (-108.9417624)
+   (-108.9417624) should be (-108.941762)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+Latitude:   36d 47m 24s North   (36.7899989)
+   (36.7899989) should be (36.789999)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+
+   zero-point line
+---------------------------------------------------
+   zero-point line
+Cmd  6:  details_of	Bisti Badlands	NM
+   zero-point line
+
+   zero-point line
+FID:       924849
+   score: 5 / 5
+Name:      Bisti Badlands
+   score: 5 / 5
+Type:      Area
+   score: 5 / 5
+State:     NM
+   score: 5 / 5
+County:    San Juan
+   score: 5 / 5
+Longitude: 108d 11m 42s West   (-108.1950721)
+   (-108.1950721) should be (-108.195072)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+Latitude:   36d 17m  5s North   (36.2847312)
+   (36.2847312) should be (36.284731)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+
+   zero-point line
+---------------------------------------------------
+   zero-point line
+
+1 >> Score from stulog01.txt:  135 / 135

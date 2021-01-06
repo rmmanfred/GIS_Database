@@ -1,0 +1,18 @@
+;
+; Existence search that should find NO match:
+Cmd  1:  exists	No Such Place	NM
+
+Not found in index: No Such Place NM
+---------------------------------------------------
+;
+; Details searches that should find single matches:
+Cmd  2:  details_of	No Such Place	NM
+
+Not found in index: No Such Place NM
+---------------------------------------------------
+;
+; Distance_between searches:
+Cmd  3:  distance_between	101010	202020
+
+Invalid feature ID: 101010
+---------------------------------------------------

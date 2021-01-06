@@ -1,0 +1,110 @@
+;
+; Details searches:
+Cmd  1:  details_of	Leadville	CO
+
+FID:       204683
+Name:      Leadville
+Type:      Populated Place
+State:     CO
+County:    Lake
+Longitude: 106d 17m 33s West   (-106.292524)
+Latitude:   39d 15m  3s North   (39.250823)
+
+---------------------------------------------------
+Cmd  2:  details_of	McBryde Hall	VA
+
+FID:       1674617
+Name:      McBryde Hall
+Type:      Building
+State:     VA
+County:    Montgomery
+Longitude: 080d 25m 19s West   (-80.421995)
+Latitude:   37d 13m 49s North   (37.230407)
+
+---------------------------------------------------
+Cmd  3:  details_of	Uncompahgre Butte	CO
+
+FID:       185583
+Name:      Uncompahgre Butte
+Type:      Summit
+State:     CO
+County:    Mesa
+Longitude: 108d 38m 51s West   (-108.647595)
+Latitude:   38d 34m 36s North   (38.576654)
+
+---------------------------------------------------
+Cmd  4:  details_of	Asaga Strait	AS
+
+FID:       1388698
+Name:      Asaga Strait
+Type:      Channel
+State:     AS
+County:    Manu‘a District
+Longitude: 169d 37m 49s West   (-169.630278)
+Latitude:   14d 10m 26s South   (-14.173889)
+
+FID:       1388699
+Name:      Asaga Strait
+Type:      Channel
+State:     AS
+County:    Eastern
+Longitude: 170d 37m 25s West   (-170.623611)
+Latitude:   14d 15m 20s South   (-14.255556)
+
+---------------------------------------------------
+;
+; Some that need to pay attention to the state abbreviation:
+Cmd  5:  details_of	Mount Pleasant	IA
+
+FID:       459328
+Name:      Mount Pleasant
+Type:      Populated Place
+State:     IA
+County:    Henry
+Longitude: 091d 33m 29s West   (-91.557938)
+Latitude:   40d 57m 49s North   (40.963640)
+
+---------------------------------------------------
+Cmd  6:  details_of	Mount Pleasant	IL
+
+FID:       414041
+Name:      Mount Pleasant
+Type:      Populated Place
+State:     IL
+County:    Union
+Longitude: 089d  4m 25s West   (-89.073686)
+Latitude:   37d 27m  7s North   (37.451995)
+
+---------------------------------------------------
+;
+; Distance searches:
+Cmd  7:  distance_between	1388778	188771
+
+First:	( 170d 48m 18s West,  14d 20m 10s South )  Fagamutu, AS
+Second:	( 106d 53m 28s West,  38d 59m 35s North )  Conundrum Basin, CO
+Distance:  8884.8km
+---------------------------------------------------
+Cmd  8:  distance_between	1388698	1390084
+
+First:	( 169d 37m 49s West,  14d 10m 26s South )  Asaga Strait, AS
+Second:	( 144d 45m 11s East,  13d 21m  6s North )  Talofofo, GU
+Distance:  5881.6km
+---------------------------------------------------
+Cmd  9:  distance_between	188777	1674617
+
+First:	( 106d 59m 23s West,  38d 57m 33s North )  Gothic, CO
+Second:	( 080d 25m 19s West,  37d 13m 49s North )  McBryde Hall, VA
+Distance:  2324.6km
+---------------------------------------------------
+Cmd  10:  distance_between	1498405	1498467
+
+First:	( 080d 24m 50s West,  37d 13m 46s North )  Blacksburg, VA
+Second:	( 080d 24m 32s West,  37d  7m 47s North )  Christiansburg, VA
+Distance:  11.1km
+---------------------------------------------------
+Cmd  11:  distance_between	459328	414041
+
+First:	( 091d 33m 29s West,  40d 57m 49s North )  Mount Pleasant, IA
+Second:	( 089d  4m 25s West,  37d 27m  7s North )  Mount Pleasant, IL
+Distance:  445.2km
+---------------------------------------------------

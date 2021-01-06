@@ -1,0 +1,98 @@
+README for c08 in CS 2505 Fall 2019
+--------------------------------------------------------------------------------
+The tarball you just extracted should contain the following directories and
+files:
+
+  README                      this file
+  dev/                        empty directory; develop your solution here
+  grading/                    full grading harness
+     gradeC08.sh              bash script to automate grading procedure
+     compare                  utility used by the grading script
+     gisdata/                 directory holding GIS data files
+        MixedFeatures.txt
+        NM_100.txt
+        NM_1000.txt
+        NM_5000.txt
+        NM_22500.txt
+        VA_10000.txt
+        VA_large.txt
+     scripts/                 directory holding command files
+        script01.txt
+        script02.txt
+        script03.txt
+        script04.txt
+        script05.txt
+        script06.txt
+        script07.txt
+        script08.txt
+        script09.txt
+     logs/                    directory holding reference output logs
+        reflog01.txt
+        reflog02.txt
+        reflog03.txt
+        reflog04.txt
+        reflog05.txt
+        reflog06.txt
+        reflog07.txt
+        reflog08.txt
+        reflog09.txt
+  suppliedcode/               directory holding supplied hash table implementation
+     StringHashTable.h
+     StringHashTable.o
+
+We suggest you do your development work in the supplied dev directory.
+
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Using the test files in your development work:
+--------------------------------------------------------------------------------
+Once you have a working solution, or a partially-working solution, you can use
+the supplied scripts and GIS files in your own testing.
+
+Pick a script you want to use; we suggest that you start with script01.txt. 
+Copy that script into the directory where you are developing your solution; read
+the script to see what GIS data file it needs, and copy that file to the same
+directory.
+
+Run your solution:  gis scriptxx.txt logxx.txt  (xx is the number of the script)
+
+Compare the results in your solution to the corresponding reference log, 
+reflogxx.txt; you can do this manually, or you can use the compare tool (copy
+it to your development directory, along with the appropriate reference log):
+
+	Invocation:  compare <test #> <reference log file> <student log file>
+					 test # is the number of the test case being checked
+					 reference log file is the name of the correct log file
+					 student log file is the name of student's log file
+
+(You can just use the script number for the <test #>.)  The compare tool will
+write its results to a file named comparexx.txt, so you can examine that.
+
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Using the grading script to verify your final submission:
+--------------------------------------------------------------------------------
+To use the grading script, prepare a tar file containing all the .c and .h
+files needed by your solution AND NOTHING ELSE.  Name your tar file using
+the following pattern:  PID.c08.1.tar (e.g., wmcquain.c08.1.tar).
+
+Execution options for the grading script:
+
+   gradec08.sh <name of your tar file>
+      Unpacks your tar file into ./tempdir
+      Copies .c and .h files to ./build
+      Tries to build an executable in ./build
+      Runs your executable on each script in ./scripts
+      Runs compare to score your log files vs the ones in ./logs
+      Writes a summary of the testing to PID.txt
+      
+   gradec08.sh -clean
+      Deletes all the files created by a previous run of the gradec08.sh
+
+The summary file, PID.txt, includes ALL of the grading details, broken into
+several sections.
+
+If your tar file is incomplete, or puts the code in a subdirectory, the
+grading process will probably fail to produce an executable.  If this happens,
+you must create a correct tar file.  Submitting a tar file that does not work
+with the grading script will result in a score of 0.

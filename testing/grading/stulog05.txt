@@ -1,0 +1,124 @@
+;
+; Existence searches that should find single matches:
+Cmd  1:  exists	Annandale High School	VA
+
+1 occurrences: Annandale High School VA
+---------------------------------------------------
+Cmd  2:  exists	Lusters Gate	VA
+
+1 occurrences: Lusters Gate VA
+---------------------------------------------------
+;
+; Some that should find multiple matches:
+Cmd  3:  exists	Back Creek	VA
+
+12 occurrences: Back Creek VA
+---------------------------------------------------
+Cmd  4:  exists	Low Gap	VA
+
+9 occurrences: Low Gap VA
+---------------------------------------------------
+;
+; Some details searches:
+Cmd  5:  details_of	Flounder Point	VA
+
+FID:       1466732
+Name:      Flounder Point
+Type:      Cape
+State:     VA
+County:    Accomack
+Longitude: 075d 35m 30s West   (-75.591594)
+Latitude:   37d 40m 42s North   (37.6784641)
+
+---------------------------------------------------
+Cmd  6:  details_of	Lusters Gate	VA
+
+FID:       1469939
+Name:      Lusters Gate
+Type:      Locale
+State:     VA
+County:    Montgomery
+Longitude: 080d 21m 49s West   (-80.3636592)
+Latitude:   37d 14m 33s North   (37.2426298)
+
+---------------------------------------------------
+Cmd  7:  details_of	Nomini Cliffs	VA
+
+FID:       1471560
+Name:      Nomini Cliffs
+Type:      Cliff
+State:     VA
+County:    Westmoreland
+Longitude: 076d 48m 41s West   (-76.8113548)
+Latitude:   38d  9m 58s North   (38.1662418)
+
+---------------------------------------------------
+Cmd  8:  details_of	Devils Backbone	VA
+
+FID:       1465740
+Name:      Devils Backbone
+Type:      Ridge
+State:     VA
+County:    Franklin
+Longitude: 080d  6m 26s West   (-80.1072612)
+Latitude:   37d  2m  3s North   (37.0343031)
+
+FID:       1465741
+Name:      Devils Backbone
+Type:      Ridge
+State:     VA
+County:    Frederick
+Longitude: 078d  5m 52s West   (-78.0977774)
+Latitude:   39d 12m 20s North   (39.2056591)
+
+---------------------------------------------------
+Cmd  9:  details_of	Difficult Creek	VA
+
+FID:       1465787
+Name:      Difficult Creek
+Type:      Stream
+State:     VA
+County:    Charlotte
+Longitude: 078d 41m 16s West   (-78.6877821)
+Latitude:   36d 44m 42s North   (36.7451386)
+
+FID:       1465788
+Name:      Difficult Creek
+Type:      Stream
+State:     VA
+County:    Bedford
+Longitude: 079d 31m 23s West   (-79.5230854)
+Latitude:   37d 10m 33s North   (37.1756995)
+
+---------------------------------------------------
+Cmd  10:  details_of	Flowerdew Hundred	VA
+
+FID:       1466738
+Name:      Flowerdew Hundred
+Type:      Flat
+State:     VA
+County:    Prince George
+Longitude: 077d  5m 54s West   (-77.0983042)
+Latitude:   37d 17m 39s North   (37.2940372)
+
+---------------------------------------------------
+;
+; Some distance searches:
+Cmd  11:  distance_between	1463750	1467851
+
+First:	( 079d 41m 52s West,  37d 16m  9s North )  Bramletts Mountain, VA
+Second:	( 078d 23m 11s West,  38d 33m 24s North )  Hawksbill Gap, VA
+Distance:  183.7km
+---------------------------------------------------
+Cmd  12:  distance_between	1472187	1465729
+
+First:	( 076d 34m 53s West,  37d 16m 45s North )  Penniman Spit, VA
+Second:	( 080d 19m 11s West,  37d  8m 47s North )  Den Hill, VA
+Distance:  331.4km
+---------------------------------------------------
+Cmd  13:  distance_between	1466738	1470021
+
+First:	( 077d  5m 54s West,  37d 17m 39s North )  Flowerdew Hundred, VA
+Second:	( 082d 21m  2s West,  36d 55m 55s North )  Maize Hollow, VA
+Distance:  467.4km
+---------------------------------------------------

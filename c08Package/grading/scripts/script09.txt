@@ -1,0 +1,30 @@
+; Script 8:  more than 59,000-element db file, duplicate feature names
+;            exists commands
+;            details commands
+;            distance_between commands
+;
+; Execution:  gis script08.txt log08.txt
+;
+db_file	VA_large.txt
+table_sz	120000
+;
+; Existence searches that should find single matches:
+exists	Annandale High School	VA
+exists	Lusters Gate	VA
+;
+; Some that should find multiple matches:
+exists	Back Creek	VA
+exists	Low Gap	VA
+;
+; Some details searches:
+details_of	Flounder Point	VA
+details_of	Lusters Gate	VA
+details_of	Nomini Cliffs	VA
+details_of	Devils Backbone	VA
+details_of	Difficult Creek	VA
+details_of	Flowerdew Hundred	VA
+;
+; Some distance searches:
+distance_between	1463750	1467851
+distance_between	1472187	1465729
+distance_between	1466738	1470021

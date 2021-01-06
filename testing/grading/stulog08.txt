@@ -1,0 +1,76 @@
+;
+; Existence searches:
+Cmd  1:  exists	Jemez Falls	NM
+
+1 occurrences: Jemez Falls NM
+---------------------------------------------------
+Cmd  2:  exists	Bosque del Apache National Wildlife Refuge	NM
+
+1 occurrences: Bosque del Apache National Wildlife Refuge NM
+---------------------------------------------------
+;
+; Some details searches:
+Cmd  3:  details_of	Jemez Falls	NM
+
+FID:       907344
+Name:      Jemez Falls
+Type:      Falls
+State:     NM
+County:    Sandoval
+Longitude: 106d 36m 24s West   (-106.6065808)
+Latitude:   35d 48m 46s North   (35.81268)
+
+---------------------------------------------------
+Cmd  4:  details_of	Bosque del Apache National Wildlife Refuge	NM
+
+FID:       920422
+Name:      Bosque del Apache National Wildlife Refuge
+Type:      Park
+State:     NM
+County:    Socorro
+Longitude: 106d 53m 32s West   (-106.8922528)
+Latitude:   34d 48m 20s North   (34.8056098)
+
+---------------------------------------------------
+Cmd  5:  details_of	Aztec Ruins National Monument	NM
+
+FID:       885961
+Name:      Aztec Ruins National Monument
+Type:      Park
+State:     NM
+County:    San Juan
+Longitude: 107d 59m 53s West   (-107.9981235)
+Latitude:   36d 50m  9s North   (36.835837)
+
+---------------------------------------------------
+Cmd  6:  details_of	Screaming Left Hand Turn	NM
+
+FID:       925096
+Name:      Screaming Left Hand Turn
+Type:      Rapids
+State:     NM
+County:    Taos
+Longitude: 106d 40m 25s West   (-106.673648)
+Latitude:   36d 21m  3s North   (36.350849)
+
+---------------------------------------------------
+;
+; Some distance searches:
+Cmd  7:  distance_between	906350	920422
+
+First:	( 106d 30m  8s West,  35d  3m 30s North )  Four Hills Ranch, NM
+Second:	( 106d 53m 32s West,  34d 48m 20s North )  Bosque del Apache National Wildlife Refuge, NM
+Distance:  45.3km
+---------------------------------------------------
+Cmd  8:  distance_between	2095890	885961
+
+First:	( 104d 31m 24s West,  33d 18m 21s North )  Roswell Army Air Field (historical), NM
+Second:	( 107d 59m 53s West,  36d 50m  9s North )  Aztec Ruins National Monument, NM
+Distance:  504.0km
+---------------------------------------------------
+Cmd  9:  distance_between	925103	906605
+
+First:	( 105d 23m 58s West,  35d 24m 14s North )  Dead Horse, NM
+Second:	( 108d 50m  1s West,  33d 22m 35s North )  Gold Dust Gulch, NM
+Distance:  387.4km
+---------------------------------------------------

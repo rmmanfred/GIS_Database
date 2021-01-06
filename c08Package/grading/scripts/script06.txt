@@ -1,0 +1,25 @@
+; Script 6:  23-element db file, mixed states
+;            details commands
+;            distance_between commands
+;
+; Execution:  gis script06.txt log06.txt
+;
+db_file	MixedFeatures.txt
+table_sz	50
+;
+; Details searches:
+details_of	Leadville	CO
+details_of	McBryde Hall	VA
+details_of	Uncompahgre Butte	CO
+details_of	Asaga Strait	AS
+;
+; Some that need to pay attention to the state abbreviation:
+details_of	Mount Pleasant	IA
+details_of	Mount Pleasant	IL
+;
+; Distance searches:
+distance_between	1388778	188771
+distance_between	1388698	1390084
+distance_between	188777	1674617
+distance_between	1498405	1498467
+distance_between	459328	414041

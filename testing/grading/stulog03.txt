@@ -1,0 +1,184 @@
+;
+; Existence searches that should find single matches:
+Cmd  1:  exists	Arroyo Seco Spring	NM
+
+1 occurrences: Arroyo Seco Spring NM
+---------------------------------------------------
+Cmd  2:  exists	Agua Piedra Trail	NM
+
+1 occurrences: Agua Piedra Trail NM
+---------------------------------------------------
+Cmd  3:  exists	Aqua Dulce Seep	NM
+
+1 occurrences: Aqua Dulce Seep NM
+---------------------------------------------------
+;
+; Some that should find multiple matches:
+Cmd  4:  exists	Earth Tank	NM
+
+2 occurrences: Earth Tank NM
+---------------------------------------------------
+Cmd  5:  exists	Turkey Tank	NM
+
+3 occurrences: Turkey Tank NM
+---------------------------------------------------
+;
+; Details searches that should find single matches:
+Cmd  6:  details_of	Arroyo Seco Spring	NM
+
+FID:       913978
+Name:      Arroyo Seco Spring
+Type:      Spring
+State:     NM
+County:    Rio Arriba
+Longitude: 106d 11m 33s West   (-106.1925646)
+Latitude:   36d 24m 30s North   (36.4083448)
+
+---------------------------------------------------
+Cmd  7:  details_of	Agua Piedra Trail	NM
+
+FID:       913424
+Name:      Agua Piedra Trail
+Type:      Trail
+State:     NM
+County:    Los Alamos
+Longitude: 106d 19m 10s West   (-106.3194727)
+Latitude:   35d 56m 37s North   (35.9436339)
+
+---------------------------------------------------
+Cmd  8:  details_of	Aqua Dulce Seep	NM
+
+FID:       913275
+Name:      Aqua Dulce Seep
+Type:      Spring
+State:     NM
+County:    Eddy
+Longitude: 104d 41m 25s West   (-104.6902267)
+Latitude:   32d  7m  9s North   (32.1192233)
+
+---------------------------------------------------
+;
+; Some that should find multiple matches:
+Cmd  9:  details_of	Earth Tank	NM
+
+FID:       914030
+Name:      Earth Tank
+Type:      Reservoir
+State:     NM
+County:    Socorro
+Longitude: 107d 13m 57s West   (-107.232505)
+Latitude:   34d  3m 20s North   (34.055614)
+
+FID:       914045
+Name:      Earth Tank
+Type:      Reservoir
+State:     NM
+County:    Socorro
+Longitude: 107d  9m 11s West   (-107.1530641)
+Latitude:   34d  6m 36s North   (34.1099917)
+
+---------------------------------------------------
+Cmd  10:  details_of	Turkey Tank	NM
+
+FID:       913137
+Name:      Turkey Tank
+Type:      Reservoir
+State:     NM
+County:    Lincoln
+Longitude: 105d 35m 40s West   (-105.5944262)
+Latitude:   33d 23m  5s North   (33.3848579)
+
+FID:       913160
+Name:      Turkey Tank
+Type:      Reservoir
+State:     NM
+County:    Catron
+Longitude: 108d 44m 16s West   (-108.7376631)
+Latitude:   33d 32m 26s North   (33.5404365)
+
+FID:       913860
+Name:      Turkey Tank
+Type:      Reservoir
+State:     NM
+County:    Rio Arriba
+Longitude: 106d 51m  4s West   (-106.8512421)
+Latitude:   36d 26m  0s North   (36.4333816)
+
+---------------------------------------------------
+Cmd  11:  details_of	Little Tank	NM
+
+FID:       913135
+Name:      Little Tank
+Type:      Reservoir
+State:     NM
+County:    Otero
+Longitude: 105d 26m 19s West   (-105.4386485)
+Latitude:   32d 45m 57s North   (32.7658059)
+
+FID:       913350
+Name:      Little Tank
+Type:      Reservoir
+State:     NM
+County:    Lincoln
+Longitude: 105d 25m 40s West   (-105.4277189)
+Latitude:   33d 26m 34s North   (33.4427006)
+
+FID:       913357
+Name:      Little Tank
+Type:      Reservoir
+State:     NM
+County:    Otero
+Longitude: 105d 28m 49s West   (-105.4804099)
+Latitude:   32d 49m 42s North   (32.8284503)
+
+FID:       913391
+Name:      Little Tank
+Type:      Reservoir
+State:     NM
+County:    Otero
+Longitude: 105d 23m 30s West   (-105.3916456)
+Latitude:   32d 44m 32s North   (32.7423244)
+
+FID:       913890
+Name:      Little Tank
+Type:      Reservoir
+State:     NM
+County:    Socorro
+Longitude: 107d  9m 42s West   (-107.1617018)
+Latitude:   34d  6m 11s North   (34.1031202)
+
+FID:       913938
+Name:      Little Tank
+Type:      Reservoir
+State:     NM
+County:    Rio Arriba
+Longitude: 106d 34m 31s West   (-106.5754161)
+Latitude:   36d 25m 53s North   (36.431335)
+
+---------------------------------------------------
+;
+; Distance_between searches:
+Cmd  12:  distance_between	913137	913860
+
+First:	( 105d 35m 40s West,  33d 23m  5s North )  Turkey Tank, NM
+Second:	( 106d 51m  4s West,  36d 26m  0s North )  Turkey Tank, NM
+Distance:  357.8km
+---------------------------------------------------
+Cmd  13:  distance_between	913132	913215
+
+First:	( 105d 11m 48s West,  33d 36m 24s North )  Ramerez, NM
+Second:	( 105d 50m 34s West,  32d 39m 36s North )  Table Top, NM
+Distance:  121.2km
+---------------------------------------------------
+Cmd  14:  distance_between	913437	913451
+
+First:	( 105d 48m 33s West,  35d 46m  9s North )  Big Tesuque Campground, NM
+Second:	( 107d 18m 35s West,  36d 32m  9s North )  Jaramillo Mesa, NM
+Distance:  159.4km
+---------------------------------------------------
+Cmd  15:  distance_between	913459	913579
+
+First:	( 103d 11m 28s West,  36d 26m 48s North )  NASA Wind Charger, NM
+Second:	( 105d 25m 33s West,  36d 22m 13s North )  Taos, NM
+Distance:  200.2km
+---------------------------------------------------

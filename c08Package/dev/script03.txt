@@ -1,0 +1,34 @@
+; Script 3:  1000-element db file, duplicate feature names
+;            exists commands
+;            details commands
+;            distance_between commands
+;
+; Execution:  gis script03.txt log03.txt
+;
+db_file	NM_1000.txt
+table_sz	2000
+;
+; Existence searches that should find single matches:
+exists	Arroyo Seco Spring	NM
+exists	Agua Piedra Trail	NM
+exists	Aqua Dulce Seep	NM
+;
+; Some that should find multiple matches:
+exists	Earth Tank	NM
+exists	Turkey Tank	NM
+;
+; Details searches that should find single matches:
+details_of	Arroyo Seco Spring	NM
+details_of	Agua Piedra Trail	NM
+details_of	Aqua Dulce Seep	NM
+;
+; Some that should find multiple matches:
+details_of	Earth Tank	NM
+details_of	Turkey Tank	NM
+details_of	Little Tank	NM
+;
+; Distance_between searches:
+distance_between	913137	913860
+distance_between	913132	913215
+distance_between	913437	913451
+distance_between	913459	913579
