@@ -1,0 +1,224 @@
+Comparing reference file ./logs/reflog06.txt to student file stulog06.txt:
+
+;
+   zero-point line
+; Details searches:
+   zero-point line
+Cmd  1:  details_of	Leadville	CO
+   zero-point line
+
+   zero-point line
+FID:       204683
+   score: 5 / 5
+Name:      Leadville
+   score: 5 / 5
+Type:      Populated Place
+   score: 5 / 5
+State:     CO
+   score: 5 / 5
+County:    Lake
+   score: 5 / 5
+Longitude: 106d 17m 33s West   (-106.292524)
+   score: 5 / 5
+Latitude:   39d 15m  3s North   (39.250823)
+   score: 5 / 5
+
+   zero-point line
+---------------------------------------------------
+   zero-point line
+Cmd  2:  details_of	McBryde Hall	VA
+   zero-point line
+
+   zero-point line
+FID:       1674617
+   score: 5 / 5
+Name:      McBryde Hall
+   score: 5 / 5
+Type:      Building
+   score: 5 / 5
+State:     VA
+   score: 5 / 5
+County:    Montgomery
+   score: 5 / 5
+Longitude: 080d 25m 19s West   (-80.421995)
+   score: 5 / 5
+Latitude:   37d 13m 49s North   (37.230407)
+   score: 5 / 5
+
+   zero-point line
+---------------------------------------------------
+   zero-point line
+Cmd  3:  details_of	Uncompahgre Butte	CO
+   zero-point line
+
+   zero-point line
+FID:       185583
+   score: 5 / 5
+Name:      Uncompahgre Butte
+   score: 5 / 5
+Type:      Summit
+   score: 5 / 5
+State:     CO
+   score: 5 / 5
+County:    Mesa
+   score: 5 / 5
+Longitude: 108d 38m 51s West   (-108.647595)
+   score: 5 / 5
+Latitude:   38d 34m 36s North   (38.576654)
+   score: 5 / 5
+
+   zero-point line
+---------------------------------------------------
+   zero-point line
+Cmd  4:  details_of	Asaga Strait	AS
+   zero-point line
+
+   zero-point line
+FID:       1388698
+   score: 5 / 5
+Name:      Asaga Strait
+   score: 5 / 5
+Type:      Channel
+   score: 5 / 5
+State:     AS
+   score: 5 / 5
+County:    Manu‘a District
+   score: 5 / 5
+Longitude: 169d 37m 49s West   (-169.630278)
+   score: 5 / 5
+Latitude:   14d 10m 26s South   (-14.173889)
+   score: 5 / 5
+
+   zero-point line
+FID:       1388699
+   score: 5 / 5
+Name:      Asaga Strait
+   score: 5 / 5
+Type:      Channel
+   score: 5 / 5
+State:     AS
+   score: 5 / 5
+County:    Eastern
+   score: 5 / 5
+Longitude: 170d 37m 25s West   (-170.623611)
+   score: 5 / 5
+Latitude:   14d 15m 20s South   (-14.255556)
+   score: 5 / 5
+
+   zero-point line
+---------------------------------------------------
+   zero-point line
+;
+   zero-point line
+; Some that need to pay attention to the state abbreviation:
+   zero-point line
+Cmd  5:  details_of	Mount Pleasant	IA
+   zero-point line
+
+   zero-point line
+FID:       459328
+   score: 5 / 5
+Name:      Mount Pleasant
+   score: 5 / 5
+Type:      Populated Place
+   score: 5 / 5
+State:     IA
+   score: 5 / 5
+County:    Henry
+   score: 5 / 5
+Longitude: 091d 33m 29s West   (-91.557938)
+   score: 5 / 5
+Latitude:   40d 57m 49s North   (40.963640)
+   score: 5 / 5
+
+   zero-point line
+---------------------------------------------------
+   zero-point line
+Cmd  6:  details_of	Mount Pleasant	IL
+   zero-point line
+
+   zero-point line
+FID:       414041
+   score: 5 / 5
+Name:      Mount Pleasant
+   score: 5 / 5
+Type:      Populated Place
+   score: 5 / 5
+State:     IL
+   score: 5 / 5
+County:    Union
+   score: 5 / 5
+Longitude: 089d  4m 25s West   (-89.073686)
+   score: 5 / 5
+Latitude:   37d 27m  7s North   (37.451995)
+   score: 5 / 5
+
+   zero-point line
+---------------------------------------------------
+   zero-point line
+;
+   zero-point line
+; Distance searches:
+   zero-point line
+Cmd  7:  distance_between	1388778	188771
+   zero-point line
+
+   zero-point line
+First:	( 170d 48m 18s West,  14d 20m 10s South )  Fagamutu, AS
+   score: 10 / 10
+Second:	( 106d 53m 28s West,  38d 59m 35s North )  Conundrum Basin, CO
+   score: 10 / 10
+Distance:  8884.8km
+   score: 10 / 10
+---------------------------------------------------
+   zero-point line
+Cmd  8:  distance_between	1388698	1390084
+   zero-point line
+
+   zero-point line
+First:	( 169d 37m 49s West,  14d 10m 26s South )  Asaga Strait, AS
+   score: 10 / 10
+Second:	( 144d 45m 11s East,  13d 21m  6s North )  Talofofo, GU
+   score: 10 / 10
+Distance:  5881.6km
+   score: 10 / 10
+---------------------------------------------------
+   zero-point line
+Cmd  9:  distance_between	188777	1674617
+   zero-point line
+
+   zero-point line
+First:	( 106d 59m 23s West,  38d 57m 33s North )  Gothic, CO
+   score: 10 / 10
+Second:	( 080d 25m 19s West,  37d 13m 49s North )  McBryde Hall, VA
+   score: 10 / 10
+Distance:  2324.6km
+   score: 10 / 10
+---------------------------------------------------
+   zero-point line
+Cmd  10:  distance_between	1498405	1498467
+   zero-point line
+
+   zero-point line
+First:	( 080d 24m 50s West,  37d 13m 46s North )  Blacksburg, VA
+   score: 10 / 10
+Second:	( 080d 24m 32s West,  37d  7m 47s North )  Christiansburg, VA
+   score: 10 / 10
+Distance:  11.1km
+   score: 10 / 10
+---------------------------------------------------
+   zero-point line
+Cmd  11:  distance_between	459328	414041
+   zero-point line
+
+   zero-point line
+First:	( 091d 33m 29s West,  40d 57m 49s North )  Mount Pleasant, IA
+   score: 10 / 10
+Second:	( 089d  4m 25s West,  37d 27m  7s North )  Mount Pleasant, IL
+   score: 10 / 10
+Distance:  445.2km
+   score: 10 / 10
+---------------------------------------------------
+   zero-point line
+
+6 >> Score from stulog06.txt:  395 / 395

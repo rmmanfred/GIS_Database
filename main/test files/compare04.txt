@@ -1,0 +1,344 @@
+Comparing reference file ./logs/reflog04.txt to student file stulog04.txt:
+
+;
+   zero-point line
+; Existence searches that should find single matches:
+   zero-point line
+Cmd  1:  exists	Bootlegger Gap	NM
+   zero-point line
+
+   zero-point line
+1 occurrences: Bootlegger Gap NM
+   score: 10 / 10
+---------------------------------------------------
+   zero-point line
+Cmd  2:  exists	Niagara Tunnel (historical)	NM
+   zero-point line
+
+   zero-point line
+1 occurrences: Niagara Tunnel (historical) NM
+   score: 10 / 10
+---------------------------------------------------
+   zero-point line
+Cmd  3:  exists	Cleveland Mine	NM
+   zero-point line
+
+   zero-point line
+1 occurrences: Cleveland Mine NM
+   score: 10 / 10
+---------------------------------------------------
+   zero-point line
+;
+   zero-point line
+; Some that should find multiple matches:
+   zero-point line
+Cmd  4:  exists	Arroyo Cuervo	NM
+   zero-point line
+
+   zero-point line
+2 occurrences: Arroyo Cuervo NM
+   score: 10 / 10
+---------------------------------------------------
+   zero-point line
+Cmd  5:  exists	Box Canyon	NM
+   zero-point line
+
+   zero-point line
+4 occurrences: Box Canyon NM
+   score: 10 / 10
+---------------------------------------------------
+   zero-point line
+Cmd  6:  exists	Canon del Agua	NM
+   zero-point line
+
+   zero-point line
+6 occurrences: Canon del Agua NM
+   score: 10 / 10
+---------------------------------------------------
+   zero-point line
+;
+   zero-point line
+; Some details searches:
+   zero-point line
+Cmd  7:  details_of	Canon del Agua	NM
+   zero-point line
+
+   zero-point line
+FID:       902800
+   score: 5 / 5
+Name:      Canon del Agua
+   score: 5 / 5
+Type:      Civil
+   score: 5 / 5
+State:     NM
+   score: 5 / 5
+County:    Santa Fe
+   score: 5 / 5
+Longitude: 106d 13m 10s West   (-106.2194683)
+   (-106.2194683) should be (-106.219468)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+Latitude:   35d 15m 10s North   (35.2528197)
+   (35.2528197) should be (35.252820)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+
+   zero-point line
+FID:       904562
+   score: 5 / 5
+Name:      Canon del Agua
+   score: 5 / 5
+Type:      Valley
+   score: 5 / 5
+State:     NM
+   score: 5 / 5
+County:    Mora
+   score: 5 / 5
+Longitude: 105d 15m 25s West   (-105.2569559)
+   (-105.2569559) should be (-105.256956)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+Latitude:   35d 56m 50s North   (35.9472601)
+   (35.9472601) should be (35.947260)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+
+   zero-point line
+FID:       904563
+   score: 5 / 5
+Name:      Canon del Agua
+   score: 5 / 5
+Type:      Valley
+   score: 5 / 5
+State:     NM
+   score: 5 / 5
+County:    San Miguel
+   score: 5 / 5
+Longitude: 105d 16m 40s West   (-105.2777879)
+   (-105.2777879) should be (-105.277788)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+Latitude:   35d 40m 12s North   (35.6700424)
+   (35.6700424) should be (35.670042)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+
+   zero-point line
+FID:       904564
+   score: 5 / 5
+Name:      Canon del Agua
+   score: 5 / 5
+Type:      Valley
+   score: 5 / 5
+State:     NM
+   score: 5 / 5
+County:    Torrance
+   score: 5 / 5
+Longitude: 106d 19m 46s West   (-106.3294641)
+   (-106.3294641) should be (-106.329464)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+Latitude:   34d 41m 12s North   (34.6867257)
+   (34.6867257) should be (34.686726)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+
+   zero-point line
+FID:       904565
+   score: 5 / 5
+Name:      Canon del Agua
+   score: 5 / 5
+Type:      Valley
+   score: 5 / 5
+State:     NM
+   score: 5 / 5
+County:    Sandoval
+   score: 5 / 5
+Longitude: 106d 18m 23s West   (-106.306413)
+   score: 5 / 5
+Latitude:   35d 16m 56s North   (35.2822632)
+   (35.2822632) should be (35.282263)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+
+   zero-point line
+FID:       904566
+   score: 5 / 5
+Name:      Canon del Agua
+   score: 5 / 5
+Type:      Valley
+   score: 5 / 5
+State:     NM
+   score: 5 / 5
+County:    Sandoval
+   score: 5 / 5
+Longitude: 106d 32m 19s West   (-106.5386367)
+   (-106.5386367) should be (-106.538637)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+Latitude:   35d 18m 10s North   (35.3028177)
+   (35.3028177) should be (35.302818)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+
+   zero-point line
+---------------------------------------------------
+   zero-point line
+Cmd  8:  details_of	Navajo	NM
+   zero-point line
+
+   zero-point line
+FID:       899810
+   score: 5 / 5
+Name:      Navajo
+   score: 5 / 5
+Type:      Populated Place
+   score: 5 / 5
+State:     NM
+   score: 5 / 5
+County:    Rio Arriba
+   score: 5 / 5
+Longitude: 107d  3m 47s West   (-107.0630945)
+   (-107.0630945) should be (-107.063095)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+Latitude:   36d 56m 46s North   (36.9461201)
+   (36.9461201) should be (36.946120)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+
+   zero-point line
+---------------------------------------------------
+   zero-point line
+Cmd  9:  details_of	Smuggler Hills	NM
+   zero-point line
+
+   zero-point line
+FID:       901128
+   score: 5 / 5
+Name:      Smuggler Hills
+   score: 5 / 5
+Type:      Range
+   score: 5 / 5
+State:     NM
+   score: 5 / 5
+County:    Hidalgo
+   score: 5 / 5
+Longitude: 108d 38m 33s West   (-108.6425438)
+   (-108.6425438) should be (-108.642544)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+Latitude:   31d 27m 25s North   (31.4570498)
+   (31.4570498) should be (31.457050)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+
+   zero-point line
+---------------------------------------------------
+   zero-point line
+Cmd  10:  details_of	Capitan Pass	NM
+   zero-point line
+
+   zero-point line
+FID:       904748
+   score: 5 / 5
+Name:      Capitan Pass
+   score: 5 / 5
+Type:      Gap
+   score: 5 / 5
+State:     NM
+   score: 5 / 5
+County:    Lincoln
+   score: 5 / 5
+Longitude: 105d 28m  9s West   (-105.4691488)
+   (-105.4691488) should be (-105.469149)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+Latitude:   33d 37m 26s North   (33.6239698)
+   (33.6239698) should be (33.623970)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+
+   zero-point line
+---------------------------------------------------
+   zero-point line
+Cmd  11:  details_of	Bug Scuffle Hill	NM
+   zero-point line
+
+   zero-point line
+FID:       904166
+   score: 5 / 5
+Name:      Bug Scuffle Hill
+   score: 5 / 5
+Type:      Summit
+   score: 5 / 5
+State:     NM
+   score: 5 / 5
+County:    Otero
+   score: 5 / 5
+Longitude: 105d 48m 24s West   (-105.8066452)
+   (-105.8066452) should be (-105.806645)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+Latitude:   32d 38m 50s North   (32.6473173)
+   (32.6473173) should be (32.647317)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+
+   zero-point line
+---------------------------------------------------
+   zero-point line
+;
+   zero-point line
+; Some distance searches:
+   zero-point line
+Cmd  12:  distance_between	899789	899891
+   zero-point line
+
+   zero-point line
+First:	( 108d 51m 11s West,  34d 23m 33s North )  Mesita Blanca, NM
+   score: 10 / 10
+Second:	( 106d 52m 28s West,  33d 53m 34s North )  San Antonito, NM
+   score: 10 / 10
+Distance:  190.4km
+   score: 10 / 10
+---------------------------------------------------
+   zero-point line
+Cmd  13:  distance_between	899970	900565
+   zero-point line
+
+   zero-point line
+First:	( 107d 29m 33s West,  34d 59m 28s North )  Tze-Midi, NM
+   score: 10 / 10
+Second:	( 104d 59m 34s West,  36d 24m  2s North )  Toothache Spring, NM
+   score: 10 / 10
+Distance:  274.8km
+   score: 10 / 10
+---------------------------------------------------
+   zero-point line
+Cmd  14:  distance_between	901034	902240
+   zero-point line
+
+   zero-point line
+First:	( 105d 16m 20s West,  36d 23m  3s North )  Angel Fire Ski Area, NM
+   score: 10 / 10
+Second:	( 104d 29m 38s West,  36d 39m 54s North )  Eagle Rock, NM
+   score: 10 / 10
+Distance:  76.2km
+   score: 10 / 10
+---------------------------------------------------
+   zero-point line
+Cmd  15:  distance_between	903054	902746
+   zero-point line
+
+   zero-point line
+First:	( 105d 57m 37s West,  32d 53m 58s North )  Alamogordo, NM
+   score: 10 / 10
+Second:	( 106d 28m 31s West,  33d 40m 38s North )  Trinity Site, NM
+   score: 10 / 10
+Distance:  98.8km
+   score: 10 / 10
+---------------------------------------------------
+   zero-point line
+
+4 >> Score from stulog04.txt:  530 / 530

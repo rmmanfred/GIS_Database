@@ -1,0 +1,282 @@
+Comparing reference file ./logs/reflog05.txt to student file stulog05.txt:
+
+;
+   zero-point line
+; Existence searches that should find single matches:
+   zero-point line
+Cmd  1:  exists	Annandale High School	VA
+   zero-point line
+
+   zero-point line
+1 occurrences: Annandale High School VA
+   score: 10 / 10
+---------------------------------------------------
+   zero-point line
+Cmd  2:  exists	Lusters Gate	VA
+   zero-point line
+
+   zero-point line
+1 occurrences: Lusters Gate VA
+   score: 10 / 10
+---------------------------------------------------
+   zero-point line
+;
+   zero-point line
+; Some that should find multiple matches:
+   zero-point line
+Cmd  3:  exists	Back Creek	VA
+   zero-point line
+
+   zero-point line
+12 occurrences: Back Creek VA
+   score: 10 / 10
+---------------------------------------------------
+   zero-point line
+Cmd  4:  exists	Low Gap	VA
+   zero-point line
+
+   zero-point line
+9 occurrences: Low Gap VA
+   score: 10 / 10
+---------------------------------------------------
+   zero-point line
+;
+   zero-point line
+; Some details searches:
+   zero-point line
+Cmd  5:  details_of	Flounder Point	VA
+   zero-point line
+
+   zero-point line
+FID:       1466732
+   score: 5 / 5
+Name:      Flounder Point
+   score: 5 / 5
+Type:      Cape
+   score: 5 / 5
+State:     VA
+   score: 5 / 5
+County:    Accomack
+   score: 5 / 5
+Longitude: 075d 35m 30s West   (-75.591594)
+   score: 5 / 5
+Latitude:   37d 40m 42s North   (37.6784641)
+   (37.6784641) should be (37.678464)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+
+   zero-point line
+---------------------------------------------------
+   zero-point line
+Cmd  6:  details_of	Lusters Gate	VA
+   zero-point line
+
+   zero-point line
+FID:       1469939
+   score: 5 / 5
+Name:      Lusters Gate
+   score: 5 / 5
+Type:      Locale
+   score: 5 / 5
+State:     VA
+   score: 5 / 5
+County:    Montgomery
+   score: 5 / 5
+Longitude: 080d 21m 49s West   (-80.3636592)
+   (-80.3636592) should be (-80.363659)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+Latitude:   37d 14m 33s North   (37.2426298)
+   (37.2426298) should be (37.242630)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+
+   zero-point line
+---------------------------------------------------
+   zero-point line
+Cmd  7:  details_of	Nomini Cliffs	VA
+   zero-point line
+
+   zero-point line
+FID:       1471560
+   score: 5 / 5
+Name:      Nomini Cliffs
+   score: 5 / 5
+Type:      Cliff
+   score: 5 / 5
+State:     VA
+   score: 5 / 5
+County:    Westmoreland
+   score: 5 / 5
+Longitude: 076d 48m 41s West   (-76.8113548)
+   (-76.8113548) should be (-76.811355)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+Latitude:   38d  9m 58s North   (38.1662418)
+   (38.1662418) should be (38.166242)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+
+   zero-point line
+---------------------------------------------------
+   zero-point line
+Cmd  8:  details_of	Devils Backbone	VA
+   zero-point line
+
+   zero-point line
+FID:       1465740
+   score: 5 / 5
+Name:      Devils Backbone
+   score: 5 / 5
+Type:      Ridge
+   score: 5 / 5
+State:     VA
+   score: 5 / 5
+County:    Franklin
+   score: 5 / 5
+Longitude: 080d  6m 26s West   (-80.1072612)
+   (-80.1072612) should be (-80.107261)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+Latitude:   37d  2m  3s North   (37.0343031)
+   (37.0343031) should be (37.034303)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+
+   zero-point line
+FID:       1465741
+   score: 5 / 5
+Name:      Devils Backbone
+   score: 5 / 5
+Type:      Ridge
+   score: 5 / 5
+State:     VA
+   score: 5 / 5
+County:    Frederick
+   score: 5 / 5
+Longitude: 078d  5m 52s West   (-78.0977774)
+   (-78.0977774) should be (-78.097777)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+Latitude:   39d 12m 20s North   (39.2056591)
+   (39.2056591) should be (39.205659)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+
+   zero-point line
+---------------------------------------------------
+   zero-point line
+Cmd  9:  details_of	Difficult Creek	VA
+   zero-point line
+
+   zero-point line
+FID:       1465787
+   score: 5 / 5
+Name:      Difficult Creek
+   score: 5 / 5
+Type:      Stream
+   score: 5 / 5
+State:     VA
+   score: 5 / 5
+County:    Charlotte
+   score: 5 / 5
+Longitude: 078d 41m 16s West   (-78.6877821)
+   (-78.6877821) should be (-78.687782)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+Latitude:   36d 44m 42s North   (36.7451386)
+   (36.7451386) should be (36.745139)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+
+   zero-point line
+FID:       1465788
+   score: 5 / 5
+Name:      Difficult Creek
+   score: 5 / 5
+Type:      Stream
+   score: 5 / 5
+State:     VA
+   score: 5 / 5
+County:    Bedford
+   score: 5 / 5
+Longitude: 079d 31m 23s West   (-79.5230854)
+   (-79.5230854) should be (-79.523085)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+Latitude:   37d 10m 33s North   (37.1756995)
+   (37.1756995) should be (37.175700)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+
+   zero-point line
+---------------------------------------------------
+   zero-point line
+Cmd  10:  details_of	Flowerdew Hundred	VA
+   zero-point line
+
+   zero-point line
+FID:       1466738
+   score: 5 / 5
+Name:      Flowerdew Hundred
+   score: 5 / 5
+Type:      Flat
+   score: 5 / 5
+State:     VA
+   score: 5 / 5
+County:    Prince George
+   score: 5 / 5
+Longitude: 077d  5m 54s West   (-77.0983042)
+   (-77.0983042) should be (-77.098304)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+Latitude:   37d 17m 39s North   (37.2940372)
+   (37.2940372) should be (37.294037)
+   deduction for incorrect tokens: 0
+   score: 5 / 5
+
+   zero-point line
+---------------------------------------------------
+   zero-point line
+;
+   zero-point line
+; Some distance searches:
+   zero-point line
+Cmd  11:  distance_between	1463750	1467851
+   zero-point line
+
+   zero-point line
+First:	( 079d 41m 52s West,  37d 16m  9s North )  Bramletts Mountain, VA
+   score: 10 / 10
+Second:	( 078d 23m 11s West,  38d 33m 24s North )  Hawksbill Gap, VA
+   score: 10 / 10
+Distance:  183.7km
+   score: 10 / 10
+---------------------------------------------------
+   zero-point line
+Cmd  12:  distance_between	1472187	1465729
+   zero-point line
+
+   zero-point line
+First:	( 076d 34m 53s West,  37d 16m 45s North )  Penniman Spit, VA
+   score: 10 / 10
+Second:	( 080d 19m 11s West,  37d  8m 47s North )  Den Hill, VA
+   score: 10 / 10
+Distance:  331.4km
+   score: 10 / 10
+---------------------------------------------------
+   zero-point line
+Cmd  13:  distance_between	1466738	1470021
+   zero-point line
+
+   zero-point line
+First:	( 077d  5m 54s West,  37d 17m 39s North )  Flowerdew Hundred, VA
+   score: 10 / 10
+Second:	( 082d 21m  2s West,  36d 55m 55s North )  Maize Hollow, VA
+   score: 10 / 10
+Distance:  467.4km
+   score: 10 / 10
+---------------------------------------------------
+   zero-point line
+
+5 >> Score from stulog05.txt:  410 / 410

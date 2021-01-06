@@ -1,0 +1,32 @@
+; Script 4:  5000-element db file, duplicate feature names
+;            exists commands
+;            details commands
+;            distance_between commands
+;
+; Execution:  gis script04.txt log04.txt
+;
+db_file	NM_5000.txt
+table_sz	10000
+;
+; Existence searches that should find single matches:
+exists	Bootlegger Gap	NM
+exists	Niagara Tunnel (historical)	NM
+exists	Cleveland Mine	NM
+;
+; Some that should find multiple matches:
+exists	Arroyo Cuervo	NM
+exists	Box Canyon	NM
+exists	Canon del Agua	NM
+;
+; Some details searches:
+details_of	Canon del Agua	NM
+details_of	Navajo	NM
+details_of	Smuggler Hills	NM
+details_of	Capitan Pass	NM
+details_of	Bug Scuffle Hill	NM
+;
+; Some distance searches:
+distance_between	899789	899891
+distance_between	899970	900565
+distance_between	901034	902240
+distance_between	903054	902746
