@@ -19,5 +19,5 @@ Ross Manfred
 - Test scripts can be found in the [testing folder](main/testing)
   - run as gis "script_filename" "output_filname"
 - Reference outputs labeled "reflog", can be compared to found output with included "compare"
-  - compare file_1" "file_2"
+  - compare "file_1" "file_2"
 - "VA" and "NM" files contain contents used to build database
